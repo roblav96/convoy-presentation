@@ -1,50 +1,188 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <title>My Convoy - Presentation</title>
+    <meta name="description" content="Business presentation for My Convoy">
+    <meta name="author" content="Robert Laverty and John Andreson">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+    <link rel="stylesheet" href="bower_components/flexboxgrid/dist/flexboxgrid.min.css">
+    <link rel="stylesheet" href="css/ionicons-ios.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/sky.css">
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
+    <!-- Printing and PDF exports -->
+    <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' :
+        'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+    </script>
+
+    <link rel="stylesheet" href="css/pres.css">
+
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <section>
+                <img class="stretch img0" data-src="/img/icon-blk.png" alt="My Convoy">
+                <h2 class="pres-title">My Convoy</h2>
+                <h5 class="pres-pitch">Your Geographic Information System</h5>
+                <p class="marg0-b pad2-t t-small">
+                    Created by
+                </p>
+                <div class="row">
+                    <div class="col-xs">
+                        <p class="marg0">
+                            Robert Laverty
+                        </p>
+                        <p class="marg0 t-tiny">
+                            Technology
+                        </p>
+                        <a href="https://www.facebook.com/roblav96" target="_blank"><i class="ion-icon icon-logo-facebook"></i></a>
+                        <a href="https://www.twitter.com/roblav96" target="_blank"><i class="ion-icon icon-logo-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/roblav96" target="_blank"><i class="ion-icon icon-logo-linkedin"></i></a>
+                        <a href="https://www.github.com/roblav96" target="_blank"><i class="ion-icon icon-logo-github"></i></a>
+                    </div>
+                    <div class="col-xs">
+                        <p class="marg0">
+                            John Andreson
+                        </p>
+                        <p class="marg0 t-tiny">
+                            Business
+                        </p>
+                        <a href="https://www.facebook.com/roblav96" target="_blank"><i class="ion-icon icon-logo-facebook"></i></a>
+                        <a href="https://www.twitter.com/roblav96" target="_blank"><i class="ion-icon icon-logo-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/roblav96" target="_blank"><i class="ion-icon icon-logo-linkedin"></i></a>
+                    </div>
+                </div>
+
+            </section>
+
+            <section>
+                <h1>Problem</h1>
+                <p>
+                    People feel unsafe when they’re alone and want to stay connected when they’re part of a group
+                </p>
+            </section>
+
+            <section>
+                <h1>Solution</h1>
+                <p>
+                    Provide everyone an easier way to share their location and connect in real time
+                </p>
+            </section>
+
+            <section>
+                <h2>Competition</h2>
+                <div class="row">
+                    <div class="col-xs">
+                        <h4>Companion</h4>
+                        <ul class="ul-small">
+                            <li>Most users review this as a poor application</li>
+                            <li>Reported dropout signals, poor location tracking</li>
+                            <li>Only designed for going from point A to point B</li>
+                            <li>No ability to scale, only communicates with one person at a time</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs">
+                        <h4>Glympse</h4>
+                        <ul class="ul-small">
+                            <li>Over 500,000 downloads</li>
+                            <li>Very simple to use</li>
+                            <li>Limited in capability</li>
+                            <li>Only connects with 1 person at a time</li>
+                            <li>Only broadcasts location for short durations of time</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs">
+                        <h4>Life360</h4>
+                        <ul class="ul-small">
+                            <li>Very consistent application</li>
+                            <li>Well designed UI</li>
+                            <li>More family oriented with too many meaningless features</li>
+                            <li>Always tracking users, not able to suspend service</li>
+                            <li>Monthly fee of $5 is expensive</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3 class="t-inherit">Inadequate solutions to location based awareness</h3>
+            </section>
+
+            <section>
+                <h2>Company Mission</h2>
+                <h1 class="t-h1-icon"><i class="ion-icon icon-flag"></i></h1>
+                <p>
+                    To provide an easy to use, private location awareness system so that people will be safer and more connected.
+                </p>
+            </section>
+
+            <section>
+                <h2>Introducing</h2>
+                <img class="stretch img0" data-src="/img/icon-blk.png" alt="My Convoy">
+                <h2 class="t-inherit">My Convoy</h2>
+                <h5 class="t-inherit">Group Based Location Awareness</h5>
+                <p class="t-small">
+                    Def, Convoy: to accompany or escort, usually for protection
+                </p>
+            </section>
+
+
+
+
+
+        </div>
+    </div>
+
+    <script src="bower_components/bluebird/js/browser/bluebird.core.min.js"></script>
+    <script src="bower_components/lodash/dist/lodash.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [{
+            src: 'plugin/markdown/marked.js'
+        }, {
+            src: 'plugin/markdown/markdown.js'
+        }, {
+            src: 'plugin/notes/notes.js',
+            async: true
+        }, {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            callback: function() {
+                hljs.initHighlightingOnLoad();
+            }
+        }]
+    });
+
+    </script>
+
+    <script src="js/pres.js"></script>
+</body>
+
 </html>
+

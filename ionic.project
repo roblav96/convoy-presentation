@@ -1,0 +1,11 @@
+{
+	"name": "pres",
+	"app_id": "",
+	"documentRoot": "./",
+	"createDocumentRoot": "./",
+	"watchPatterns": [
+		"./js/pres.js",
+		"./css/pres.css",
+		"./index.html"
+	]
+}

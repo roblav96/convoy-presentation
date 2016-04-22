@@ -3,6 +3,7 @@
 *.iws
 *.eml
 out/
+bower_components/
 .DS_Store
 .svn
 log/*.log
