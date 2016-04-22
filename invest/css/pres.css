@@ -1,0 +1,332 @@
+/**/
+
+body * {
+    font-family: -apple-system, "Helvetica Neue", "Roboto", sans-serif !important;
+    font-weight: 300 !important;
+    letter-spacing: 1pt !important;
+}
+
+.pres-title {
+    text-transform: inherit !important;
+}
+
+.pres-pitch {
+    text-transform: inherit !important;
+    font-style: italic !important;
+}
+
+.user-convoy {
+    border: 1px solid #333 !important;
+    padding-bottom: 1rem !important;
+    margin-top: 1rem !important;
+}
+
+.dev-row {
+    padding-top: 1rem !important;
+    border: 1px solid #333 !important;
+    margin-bottom: 1rem !important;
+}
+
+.col-xs > img {
+    max-width: 90% !important;
+}
+
+.pres-row {
+    margin-bottom: 1rem !important;
+}
+
+.pres-row > div > h4 {
+    /*text-align: left !important;*/
+}
+
+
+/*
+	MISCELLANEOUS
+*/
+
+i.ion-icon {
+    color: #333;
+}
+
+a > i.ion-icon {
+    color: inherit;
+}
+
+.ul-tiny > li {
+    font-size: 50% !important
+}
+
+.ul-small > li {
+    font-size: 66% !important
+}
+
+.img0 {
+    border: none !important;
+    box-shadow: none !important;
+    background-color: inherit !important;
+}
+
+.t-inherit {
+    text-transform: inherit !important;
+}
+
+.t-micro {
+    font-size: 1rem !important;
+}
+
+.t-tiny {
+    font-size: 1.2rem !important;
+}
+
+.t-small {
+    font-size: 1.4rem !important;
+}
+
+.t-normal {
+    font-size: 1.6rem !important;
+}
+
+.t-size-16 {
+    font-size: 1.6rem !important;
+}
+
+.t-size-17 {
+    font-size: 1.7rem !important;
+}
+
+.t-size-18 {
+    font-size: 1.8rem !important;
+}
+
+.t-big {
+    font-size: 1.8rem !important;
+}
+
+.t-huge {
+    font-size: 2rem !important;
+}
+
+.t-massive {
+    font-size: 2.4rem !important;
+}
+
+.t-h1-icon {
+    font-size: 800% !important;
+    line-height: 0px !important;
+}
+
+.t-h3-icon {
+    font-size: 400% !important;
+    line-height: 0px !important;
+}
+
+.t-h4-icon {
+    font-size: 300% !important;
+    line-height: 0px !important;
+}
+
+.t-h5-icon {
+    font-size: 200% !important;
+    line-height: 0px !important;
+}
+
+.t-weight-400 {
+    font-weight: 400 !important;
+}
+
+.t-upper {
+    text-transform: uppercase !important;
+}
+
+.t-left {
+    text-align: left !important;
+}
+
+.t-center {
+    text-align: center !important;
+}
+
+.t-right {
+    text-align: right !important;
+}
+
+.t-white {
+    color: white !important;
+}
+
+.t-black {
+    color: #333 !important;
+}
+
+.t-bold {
+    font-weight: 400 !important;
+}
+
+.t-bolder {
+    font-weight: 600 !important;
+}
+
+.t-under {
+    text-decoration: underline !important;
+}
+
+.t-italic {
+    font-style: italic !important;
+}
+
+.t-fleft {
+    float: left;
+}
+
+.t-fright {
+    float: right;
+}
+
+.t-pad0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.t-marg1 {
+    margin: 1rem !important;
+}
+
+.t-icon > i {
+    font-size: 200% !important;
+}
+
+.top-right {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.marg0 {
+    margin: 0px !important;
+}
+
+.marg1-tb {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.marg1-b {
+    margin: 0px 0px 1rem 0px !important;
+}
+
+.pad0 {
+    padding: 0px !important;
+}
+
+.pad05-lr {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.pad05 {
+    padding: 0.5rem !important;
+}
+
+.pad2-tb {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.pad-top1 {
+    padding-top: 1rem;
+}
+
+.pad-top05 {
+    padding-top: 0.5rem;
+}
+
+.marg0-t {
+    margin-top: 0px !important;
+}
+
+.marg0-b {
+    margin-bottom: 0px !important;
+}
+
+.pad2-t {
+    padding-top: 2rem !important;
+}
+
+.pad1-b {
+    padding-bottom: 1rem !important;
+}
+
+.marg05-b {
+    margin-bottom: 0.5rem !important;
+}
+
+.marg-top1 {
+    margin-top: 1rem !important;
+}
+
+.marg0-t05 {
+    margin: 0.5rem 0px 0px 0px !important
+}
+
+.border0 {
+    border: none !important;
+}
+
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
