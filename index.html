@@ -12,38 +12,26 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <link rel="stylesheet" href="/lib/animate.css/animate.min.css">
-    <link rel="stylesheet" href="/lib/flexboxgrid/dist/flexboxgrid.min.css">
-    <link rel="stylesheet" href="/css/ionicons-ios.css">
+    <!-- <link rel="stylesheet" href="/css/ionicons-ios.css"> -->
+    <link rel="stylesheet" href="/css/pres.animate.min.css">
+    <link rel="stylesheet" href="/css/pres.flexboxgrid.min.css">
     <link rel="stylesheet" href="/css/reveal.css">
     <link rel="stylesheet" href="/css/sky.css">
-
-    <!-- Theme used for syntax highlighting of code -->
-    <!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
-
-    <!-- Printing and PDF exports -->
-<!--     <script>
-    var link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.type = 'text/css';
-    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' :
-        'css/print/paper.css';
-    document.getElementsByTagName('head')[0].appendChild(link);
-
-    </script> -->
-
     <link rel="stylesheet" href="/css/pres.css">
 
 </head>
 
 <body>
+    <img id="fixed_icon" class="animated fadeInLeft" src="/img/icon.png" alt="My Convoy Icon">
+
     <div class="reveal">
         <div class="slides">
 
-            <section>
-                <img class="stretch img0" data-src="/img/icon-blk.png" alt="My Convoy">
+
+            <section id="intro" class="animated opacity0">
+                <img class="stretch img0" data-src="/img/icon.png" alt="My Convoy">
                 <h2 class="pres-title">My Convoy</h2>
-                <h5 class="pres-pitch">Your Geographic Information System</h5>
+                <h5 id="pitch" class="pres-pitch animated opacity0">Your Geographic Information System</h5>
                 <p class="marg0-b pad2-t t-small">
                     Created by
                 </p>
@@ -92,42 +80,6 @@
             </section>
 
             <section>
-                <h2>Competition</h2>
-                <div class="row">
-                    <div class="col-xs">
-                        <h4>Companion</h4>
-                        <ul class="ul-small">
-                            <li>Most users review this as a poor application</li>
-                            <li>Reported dropout signals, poor location tracking</li>
-                            <li>Only designed for going from point A to point B</li>
-                            <li>No ability to scale, only communicates with one person at a time</li>
-                        </ul>
-                    </div>
-                    <div class="col-xs">
-                        <h4>Glympse</h4>
-                        <ul class="ul-small">
-                            <li>Over 500,000 downloads</li>
-                            <li>Very simple to use</li>
-                            <li>Limited in capability</li>
-                            <li>Only connects with 1 person at a time</li>
-                            <li>Only broadcasts location for short durations of time</li>
-                        </ul>
-                    </div>
-                    <div class="col-xs">
-                        <h4>Life360</h4>
-                        <ul class="ul-small">
-                            <li>Very consistent application</li>
-                            <li>Well designed UI</li>
-                            <li>More family oriented with too many meaningless features</li>
-                            <li>Always tracking users, not able to suspend service</li>
-                            <li>Monthly fee of $5 is expensive</li>
-                        </ul>
-                    </div>
-                </div>
-                <h3 class="t-inherit">Inadequate solutions to location based awareness</h3>
-            </section>
-
-            <section>
                 <h2>Company Mission</h2>
                 <h1 class="t-h1-icon"><i class="ion-icon icon-flag"></i></h1>
                 <p>
@@ -137,7 +89,7 @@
 
             <section>
                 <h2>Introducing</h2>
-                <img class="stretch img0" data-src="/img/icon-blk.png" alt="My Convoy">
+                <img class="stretch img0" data-src="/img/pres-icon-blk.png" alt="My Convoy">
                 <h2 class="t-inherit">My Convoy</h2>
                 <h5 class="t-inherit">Group Based Location Awareness</h5>
                 <p class="t-small">
@@ -154,13 +106,13 @@
                 <p class="t-tiny">
                     Def, Comrade: a companion who shares one's activities
                 </p>
-                <div class="row">
+                <div class="row fragment" data-fragment-index="1">
                     <div class="col-xs">
                         <p class="marg0 t-icon"><i class="ion-icon icon-contact"></i></p>
                         <p class="marg0 t-bold">App User</p>
                     </div>
                 </div>
-                <div class="row user-convoy">
+                <div class="row user-convoy fragment" data-fragment-index="1">
                     <div class="col-xs">
                         <p class="marg0 t-icon"><i class="ion-icon icon-pin"></i></p>
                         <p class="t-tiny marg0">Mom</p>
@@ -178,7 +130,7 @@
                         <p class="t-tiny marg0">Rob</p>
                     </div>
                 </div>
-                <p class="t-bold">App User's Convoy</p>
+                <p class="t-bold fragment" data-fragment-index="1">App User's Convoy</p>
                 <!-- <p class="t-tiny">(Press <i class="ion-icon icon-arrow-round-down"></i> arrow key for screens)</p> -->
             </section>
 
@@ -212,7 +164,7 @@
                 <div class="row pres-row">
                     <div class="col-xs">
                         <h4 class="marg0"><i class="ion-icon icon-construct"></i> Individualize</h4>
-                        <ul class="ul-small">
+                        <ul class="ul-small fragment">
                             <li>
                                 Build your own personal network of friends, family, colleagues, etc.
                             </li>
@@ -220,7 +172,7 @@
                     </div>
                     <div class="col-xs">
                         <h4 class="marg0"><i class="ion-icon icon-switch"></i> Simple</h4>
-                        <ul class="ul-small">
+                        <ul class="ul-small fragment">
                             <li>
                                 Toggle a comrade when you want them to receive location updates from you
                             </li>
@@ -228,7 +180,7 @@
                     </div>
                     <div class="col-xs">
                         <h4 class="marg0"><i class="ion-icon icon-lock"></i> Private</h4>
-                        <ul class="ul-small">
+                        <ul class="ul-small fragment">
                             <li>
                                 You don't request someones location, you only grant them access to yours
                             </li>
@@ -238,7 +190,7 @@
                 <div class="row pres-row">
                     <div class="col-xs">
                         <h4 class="marg0"><i class="ion-icon icon-megaphone"></i> Shout</h4>
-                        <ul class="ul-small">
+                        <ul class="ul-small fragment">
                             <li>
                                 Share a message and/or multi-media anywhere on the map
                             </li>
@@ -246,7 +198,7 @@
                     </div>
                     <div class="col-xs">
                         <h4 class="marg0"><i class="ion-icon icon-infinite"></i> Unlimited</h4>
-                        <ul class="ul-small">
+                        <ul class="ul-small fragment">
                             <li>
                                 If you want, keep the service enabled 24/7 and toggle an unlimited number of comrades
                             </li>
@@ -254,7 +206,7 @@
                     </div>
                     <div class="col-xs">
                         <h4 class="marg0"><i class="ion-icon icon-refresh-circle"></i> Automated</h4>
-                        <ul class="ul-small">
+                        <ul class="ul-small fragment">
                             <li>
                                 Everything is done automatically in the background
                             </li>
@@ -264,7 +216,7 @@
                 <div class="row pres-row">
                     <div class="col-xs">
                         <h4 class="marg0"><i class="ion-icon icon-globe"></i> Universal</h4>
-                        <ul class="ul-small">
+                        <ul class="ul-small fragment">
                             <li>
                                 The vast flexibility of features and options allows everyone to use it however they find it useful
                             </li>
@@ -272,7 +224,7 @@
                     </div>
                     <div class="col-xs">
                         <h4 class="marg0"><i class="ion-icon icon-desktop"></i> Desktop</h4>
-                        <ul class="ul-small">
+                        <ul class="ul-small fragment">
                             <li>
                                 Use My Convoy on your desktop, laptop, or smart TV
                             </li>
@@ -280,7 +232,7 @@
                     </div>
                     <div class="col-xs">
                         <h4 class="marg0"><i class="ion-icon icon-battery-charging"></i> Efficient</h4>
-                        <ul class="ul-small">
+                        <ul class="ul-small fragment">
                             <li>
                                 Intelligently decides when to enable and disable the GPS based on your movements
                             </li>
@@ -309,13 +261,21 @@
                             <p class="t-tiny marg0">Javascript</p>
                         </div>
                         <div class="col-xs">
+                            <p class="marg0 t-icon"><i class="ion-icon icon-ionic"></i></p>
+                            <p class="t-tiny marg0">Ionic Framework</p>
+                        </div>
+                        <div class="col-xs">
                             <p class="marg0 t-icon"><i class="ion-icon icon-logo-nodejs"></i></p>
                             <p class="t-tiny marg0">Node.js</p>
+                        </div>
+                        <div class="col-xs">
+                            <img class="marg0 img0 t-img" data-src="/img/redis.png" alt="Redis">
+                            <p class="t-tiny marg0">Redis</p>
                         </div>
                     </div>
                     <p>Development Stack</p>
                 </div>
-                <div class="dev-row">
+                <div class="dev-row fragment">
                     <div class="row">
                         <div class="col-xs">
                             <p class="marg0 t-icon"><i class="ion-icon icon-logo-apple"></i></p>
@@ -332,7 +292,64 @@
                     </div>
                     <p>Deployed Platforms</p>
                 </div>
-                <p>Effortless to pivot in whichever way the market demands</p>
+                <p class="fragment">Effortless to pivot in whichever way the market demands</p>
+            </section>
+
+            <section>
+                <h2>Competition</h2>
+                <div class="row">
+                    <div class="col-xs">
+                        <h4 class="marg0">Companion</h4>
+                        <ul class="ul-tiny fragment" data-fragment-index="1">
+                            <li>Most users review this as a poor application</li>
+                            <li>Reported dropout signals, inaccurate location tracking</li>
+                            <li>Only connects with 1 companion at a time</li>
+                            <li>No ability to scale, only communicates with one person at a time</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs">
+                        <h4 class="marg0">Glympse</h4>
+                        <ul class="ul-tiny fragment" data-fragment-index="3">
+                            <li>Over 500,000 downloads</li>
+                            <li>Very simple to use</li>
+                            <li>Only designed for going from point A to point B</li>
+                            <li>Limited in features</li>
+                            <li>Only broadcasts location for short durations of time (less than 4hr)</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs">
+                        <h4 class="marg0">Life360</h4>
+                        <ul class="ul-tiny fragment" data-fragment-index="5">
+                            <li>Very consistent application</li>
+                            <li>Well designed UI</li>
+                            <li>More family oriented with too many meaningless features; e.g. shopping list)</li>
+                            <li>Always tracking users, not able to suspend service</li>
+                            <li>Monthly fee of $5 is expensive</li>
+                        </ul>
+                    </div>
+                </div>
+                <h4 class="marg0 t-center">My Convoy</h4>
+                <div class="row">
+                    <div class="col-xs fragment t-left" data-fragment-index="2">
+                        <ul class="ul-tiny">
+                            <li>Simply toggle an unlimited number of comrades</li>
+                            <li>High scalability</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs fragment t-left" data-fragment-index="4">
+                        <ul class="ul-tiny">
+                            <li>Runs in background, no need to continuously input your destination and users</li>
+                            <li>More features; e.g. shout, chat, zones</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs fragment t-left" data-fragment-index="6">
+                        <ul class="ul-tiny">
+                            <li>Free</li>
+                            <li>User can disable service completely at their own discretion</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3 class="t-inherit fragment" data-fragment-index="7">Inadequate solutions to location based awareness</h3>
             </section>
 
             <section>
@@ -342,9 +359,12 @@
                         <img class="" data-src="/img/valid1.png" alt="Valid 1">
                         <img class="" data-src="/img/valid3.png" alt="Valid 3">
                         <img class="" data-src="/img/valid2.png" alt="Valid 2">
+                        <p class="t-tiny t-right marg0">
+                            <a>- US Military Training Coordinator</a>
+                        </p>
                     </div>
-                    <div class="col-xs">
-                        <img class="" data-src="/img/blue-force.jpg" alt="My Convoy">
+                    <div class="col-xs fragment">
+                        <img class="" data-src="/img/blue-force.jpg" alt="Blue Force">
                         <p>"$134.1M for Blue Force Tracker Global Services"</p>
                         <p class="t-tiny t-right">
                             <a href="http://www.defenseindustrydaily.com/1341m-for-blue-force-tracker-global-services-0427/" target="_blank">- Defense Industry Daily</a>
@@ -359,7 +379,7 @@
                     <div class="col-xs">
                         <h3 class="marg0 t-h3-icon"><i class="ion-icon icon-people"></i></h3>
                         <h4 class="marg0">Families</h4>
-                        <ul class="ul-tiny">
+                        <ul class="ul-tiny fragment">
                             <li>
                                 See where your family members are at any point in time. Great for elders and children
                             </li>
@@ -377,7 +397,7 @@
                     <div class="col-xs">
                         <h3 class="marg0 t-h3-icon"><i class="ion-icon icon-briefcase"></i></h3>
                         <h4 class="marg0">Businesses</h4>
-                        <ul class="ul-tiny">
+                        <ul class="ul-tiny fragment">
                             <li>
                                 Automate labor hours by setting geographic zones on the map
                             </li>
@@ -393,7 +413,7 @@
                     <div class="col-xs">
                         <h3 class="marg0 t-h3-icon"><i class="ion-icon icon-beer"></i></h3>
                         <h4 class="marg0">Young Adults</h4>
-                        <ul class="ul-tiny">
+                        <ul class="ul-tiny fragment">
                             <li>
                                 Use the map to see which bar your friends are at in-case you get split-up
                             </li>
@@ -441,17 +461,45 @@
                 </div>
             </section>
 
-            <!-- <section> -->
             <section>
                 <h2>Revenue Model</h2>
                 <h1 class="t-h1-icon"><i class="ion-icon icon-logo-usd"></i></h1>
-                <!-- <p>Press <i class="t-h5-icon ion-icon icon-arrow-round-down"></i> arrow key</p> -->
             </section>
+
+            <section id="contact_us">
+                <h3 class="t-bold">Please contact us to see the rest of the presentation</h3>
+                <div class="row pres-row">
+                    <div class="col-xs">
+                        <a href="tel:+14018643464" target="_blank">
+                            <h3 class="marg0 t-h3-icon"><i class="ion-icon icon-call"></i></h3>
+                            <p class="marg0">401-864-3464</p>
+                        </a>
+                    </div>
+                    <div class="col-xs">
+                        <a href="mailto:invest@myconvoyapp.com" target="_blank">
+                            <h3 class="marg0 t-h3-icon"><i class="ion-icon icon-mail"></i></h3>
+                            <p class="marg0">invest@myconvoyapp.com</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 
+███╗   ██╗ ██████╗     ██████╗ ███████╗███████╗██╗  ██╗██╗███╗   ██╗ ██████╗ ██╗
+████╗  ██║██╔═══██╗    ██╔══██╗██╔════╝██╔════╝██║ ██╔╝██║████╗  ██║██╔════╝ ██║
+██╔██╗ ██║██║   ██║    ██████╔╝█████╗  █████╗  █████╔╝ ██║██╔██╗ ██║██║  ███╗██║
+██║╚██╗██║██║   ██║    ██╔═══╝ ██╔══╝  ██╔══╝  ██╔═██╗ ██║██║╚██╗██║██║   ██║╚═╝
+██║ ╚████║╚██████╔╝    ██║     ███████╗███████╗██║  ██╗██║██║ ╚████║╚██████╔╝██╗
+╚═╝  ╚═══╝ ╚═════╝     ╚═╝     ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝
+                            PLEASE CONTACT US :)
+                            PHONE 401-864-3464
+                            EMAIL invest@myconvoyapp.com
+             -->
 
             <section>
                 <h2>Big Data</h2>
                 <div class="row">
-                    <div class="col-xs t-left">
+                    <div class="col-xs t-left fragment">
                         <h4 class="marg0 t-center">How?</h4>
                         <ul class="ul-small">
                             <li>Sell anonymous location data to big data companies for research and analysis</li>
@@ -468,7 +516,7 @@
                                 target="_blank">- Michael Fordyce, CEO of JiWire, Forbes Blog</a>
                         </p>
                     </div>
-                    <div class="col-xs">
+                    <div class="col-xs fragment">
                         <h4 class="marg0">Meta Data</h4>
                         <ul class="ul-small">
                             <li>Longitude &amp; Latitude</li>
@@ -481,7 +529,7 @@
                             <li>Device Info (manufacture, type, screen size, etc.)</li>
                         </ul>
                     </div>
-                    <div class="col-xs t-left">
+                    <div class="col-xs t-left fragment">
                         <h4 class="marg0 t-center">Value</h4>
                         <ul class="ul-small">
                             <li>Average user submits 73.62 location updates per day</li>
@@ -498,47 +546,160 @@
                 </div>
             </section>
 
+            <!-- 
+███╗   ██╗ ██████╗     ██████╗ ███████╗███████╗██╗  ██╗██╗███╗   ██╗ ██████╗ ██╗
+████╗  ██║██╔═══██╗    ██╔══██╗██╔════╝██╔════╝██║ ██╔╝██║████╗  ██║██╔════╝ ██║
+██╔██╗ ██║██║   ██║    ██████╔╝█████╗  █████╗  █████╔╝ ██║██╔██╗ ██║██║  ███╗██║
+██║╚██╗██║██║   ██║    ██╔═══╝ ██╔══╝  ██╔══╝  ██╔═██╗ ██║██║╚██╗██║██║   ██║╚═╝
+██║ ╚████║╚██████╔╝    ██║     ███████╗███████╗██║  ██╗██║██║ ╚████║╚██████╔╝██╗
+╚═╝  ╚═══╝ ╚═════╝     ╚═╝     ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝
+                            PLEASE CONTACT US :)
+                            PHONE 401-864-3464
+                            EMAIL invest@myconvoyapp.com
+             -->
+
+            <section>
+                <h3>Location Based Advertising</h3>
+                <div class="row">
+                    <div class="col-xs t-left fragment">
+                        <h4 class="marg0 t-center">How?</h4>
+                        <ul class="ul-small">
+                            <li>Sell advertisement opportunities targeting users in the vicinity of a business</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs t-left fragment">
+                        <h4 class="marg0 t-center">Example</h4>
+                        <!-- <video class="stretch" data-autoplay data-src="/img/video.mp4"></video> -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- 
+███╗   ██╗ ██████╗     ██████╗ ███████╗███████╗██╗  ██╗██╗███╗   ██╗ ██████╗ ██╗
+████╗  ██║██╔═══██╗    ██╔══██╗██╔════╝██╔════╝██║ ██╔╝██║████╗  ██║██╔════╝ ██║
+██╔██╗ ██║██║   ██║    ██████╔╝█████╗  █████╗  █████╔╝ ██║██╔██╗ ██║██║  ███╗██║
+██║╚██╗██║██║   ██║    ██╔═══╝ ██╔══╝  ██╔══╝  ██╔═██╗ ██║██║╚██╗██║██║   ██║╚═╝
+██║ ╚████║╚██████╔╝    ██║     ███████╗███████╗██║  ██╗██║██║ ╚████║╚██████╔╝██╗
+╚═╝  ╚═══╝ ╚═════╝     ╚═╝     ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝
+                            PLEASE CONTACT US :)
+                            PHONE 401-864-3464
+                            EMAIL invest@myconvoyapp.com
+             -->
+
             <section>
                 <h2>Enterprise Licenses</h2>
                 <div class="row">
-                    <div class="col-xs t-left">
+                    <div class="col-xs t-left fragment">
                         <h4 class="marg0 t-center">How?</h4>
                         <ul class="ul-small">
                             <li>Sell enterprise licenses to corporations which unlock certain plug-ins</li>
                         </ul>
                     </div>
-                    <div class="col-xs t-left">
+                    <div class="col-xs t-left fragment">
                         <h4 class="marg0 t-center">Plug-ins</h4>
                         <ul class="ul-small">
                             <li>Track employees</li>
                             <li>Automate labor hours</li>
+                            <li>Delivery tacking system</li>
                         </ul>
                     </div>
                 </div>
             </section>
+
+            <!-- 
+███╗   ██╗ ██████╗     ██████╗ ███████╗███████╗██╗  ██╗██╗███╗   ██╗ ██████╗ ██╗
+████╗  ██║██╔═══██╗    ██╔══██╗██╔════╝██╔════╝██║ ██╔╝██║████╗  ██║██╔════╝ ██║
+██╔██╗ ██║██║   ██║    ██████╔╝█████╗  █████╗  █████╔╝ ██║██╔██╗ ██║██║  ███╗██║
+██║╚██╗██║██║   ██║    ██╔═══╝ ██╔══╝  ██╔══╝  ██╔═██╗ ██║██║╚██╗██║██║   ██║╚═╝
+██║ ╚████║╚██████╔╝    ██║     ███████╗███████╗██║  ██╗██║██║ ╚████║╚██████╔╝██╗
+╚═╝  ╚═══╝ ╚═════╝     ╚═╝     ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝
+                            PLEASE CONTACT US :)
+                            PHONE 401-864-3464
+                            EMAIL invest@myconvoyapp.com
+             -->
 
             <section>
-                <h3>Local Business Advertising</h3>
+                <h2>Next Steps</h2>
                 <div class="row">
-                    <div class="col-xs t-left">
-                        <h4 class="marg0 t-center">How?</h4>
-                        <ul class="ul-small">
-                            <li>Sell advertisement opportunities targeting users in the vicinity of the business</li>
-                        </ul>
+                    <div class="col-xs-3 t-left">
                     </div>
                     <div class="col-xs t-left">
-                        <h4 class="marg0 t-center">Example</h4>
-                        <ul class="ul-small">
-                            <li>Shout message with video advertisement goes here</li>
-                        </ul>
+                        <h4 class="marg0 t-bolder">Expenses</h4>
+                    </div>
+                </div>
+                <div class="row fragment">
+                    <div class="col-xs-3 t-left">
+                        <p class="t-bold marg0">$25,000</p>
+                    </div>
+                    <div class="col-xs t-left">
+                        <p class="marg0">Server hardware expansion across country</p>
+                    </div>
+                </div>
+                <div class="row fragment">
+                    <div class="col-xs-3 t-left">
+                        <p class="t-bold marg0">$100,000</p>
+                    </div>
+                    <div class="col-xs t-left">
+                        <p class="marg0">Marketing/User Acquisition Campaign; e.g. Facebook, blog bribes, Adwords, etc.</p>
+                    </div>
+                </div>
+                <div class="row fragment">
+                    <div class="col-xs-3 t-left">
+                        <p class="t-bold marg0">$10,000</p>
+                    </div>
+                    <div class="col-xs t-left">
+                        <p class="marg0">Miscellaneous expenses</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3 t-left">
+                    </div>
+                    <div class="col-xs t-left">
+                        <h4 class="marg0 t-bolder">Tools and Materials</h4>
+                    </div>
+                </div>
+                <div class="row fragment">
+                    <div class="col-xs-3 t-left">
+                    </div>
+                    <div class="col-xs t-left">
+                        <p class="marg0">
+                            Co-location server hosting to reduce costs and increase security, $5,000 for every additional 100,000
+                            users.
+                        </p>
                     </div>
                 </div>
             </section>
-            <!-- </section> -->
 
+            <!-- 
+███╗   ██╗ ██████╗     ██████╗ ███████╗███████╗██╗  ██╗██╗███╗   ██╗ ██████╗ ██╗
+████╗  ██║██╔═══██╗    ██╔══██╗██╔════╝██╔════╝██║ ██╔╝██║████╗  ██║██╔════╝ ██║
+██╔██╗ ██║██║   ██║    ██████╔╝█████╗  █████╗  █████╔╝ ██║██╔██╗ ██║██║  ███╗██║
+██║╚██╗██║██║   ██║    ██╔═══╝ ██╔══╝  ██╔══╝  ██╔═██╗ ██║██║╚██╗██║██║   ██║╚═╝
+██║ ╚████║╚██████╔╝    ██║     ███████╗███████╗██║  ██╗██║██║ ╚████║╚██████╔╝██╗
+╚═╝  ╚═══╝ ╚═════╝     ╚═╝     ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝
+                            PLEASE CONTACT US :)
+                            PHONE 401-864-3464
+                            EMAIL invest@myconvoyapp.com
+             -->
 
+            <section>
+                <h2>Just the beginning...</h2>
+                <img class="stretch img0" data-src="/img/rlware.png" alt="RLware">
+                <h2 class="t-inherit marg0"><a href="https://rlware.com/" target="_blank">RLware</a></h2>
+                <p class="t-italic marg0">Elite Software</p>
+            </section>
 
-
+            <!-- 
+███╗   ██╗ ██████╗     ██████╗ ███████╗███████╗██╗  ██╗██╗███╗   ██╗ ██████╗ ██╗
+████╗  ██║██╔═══██╗    ██╔══██╗██╔════╝██╔════╝██║ ██╔╝██║████╗  ██║██╔════╝ ██║
+██╔██╗ ██║██║   ██║    ██████╔╝█████╗  █████╗  █████╔╝ ██║██╔██╗ ██║██║  ███╗██║
+██║╚██╗██║██║   ██║    ██╔═══╝ ██╔══╝  ██╔══╝  ██╔═██╗ ██║██║╚██╗██║██║   ██║╚═╝
+██║ ╚████║╚██████╔╝    ██║     ███████╗███████╗██║  ██╗██║██║ ╚████║╚██████╔╝██╗
+╚═╝  ╚═══╝ ╚═════╝     ╚═╝     ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝
+                            PLEASE CONTACT US :)
+                            PHONE 401-864-3464
+                            EMAIL invest@myconvoyapp.com
+             -->
 
         </div>
     </div>
@@ -549,6 +710,7 @@
 
     <script src="/js/head.min.js"></script>
     <script src="/js/reveal.min.js"></script>
+    <script src="/js/pres.js"></script>
 
     <script>
     // More info https://github.com/hakimel/reveal.js#configuration
