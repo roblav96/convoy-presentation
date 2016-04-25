@@ -27,11 +27,11 @@ window.CAN_SLIDE = function ( TO_SLIDE ) {
 		document.getElementById( 'fixed_icon' ).classList.remove( 'hide-me' )
 	}
 
-	if ( window.IS_VIEWING == true ) {
-		if ( TO_SLIDE >= 20 ) {
-			Reveal.slide( 20 )
-		}
-	}
+	// if ( window.IS_VIEWING == true ) {
+	// 	if ( TO_SLIDE >= 20 ) {
+	// 		Reveal.slide( 20 )
+	// 	}
+	// }
 }
 
 Reveal.addEventListener( 'ready', function () {
@@ -65,20 +65,20 @@ Reveal.addEventListener( 'slidechanged', function ( event ) {
 	window.CAN_SLIDE( event.indexh )
 } )
 
-document.getElementById( 'fixed_icon' ).addEventListener( "click", function ( evt ) {
-	if ( window.CLICKS == 5 ) {
-		return	
-	}
+// document.getElementById( 'fixed_icon' ).addEventListener( "click", function ( evt ) {
+// 	if ( window.CLICKS == 5 ) {
+// 		return	
+// 	}
 	
-	window.CLICKS = window.CLICKS + 1
-	if ( window.CLICKS == 5 ) {
-		window.IS_VIEWING = false
-		document.getElementById( 'contact_us' ).remove()
-		if ( Reveal.getState().indexh == 20 ) {
-			Reveal.slide( 20 )
-		}
-	}
-} )
+// 	window.CLICKS = window.CLICKS + 1
+// 	if ( window.CLICKS == 5 ) {
+// 		window.IS_VIEWING = false
+// 		document.getElementById( 'contact_us' ).remove()
+// 		if ( Reveal.getState().indexh == 20 ) {
+// 			Reveal.slide( 20 )
+// 		}
+// 	}
+// } )
 
 
 
