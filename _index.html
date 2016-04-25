@@ -1,0 +1,786 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>My Convoy - Invest</title>
+    <meta name="description" content="Business presentation for My Convoy">
+    <meta name="author" content="Robert Laverty and John Andreson">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- <link rel="stylesheet" href="/css/ionicons-ios.css"> -->
+    <link rel="stylesheet" href="/css/pres.animate.min.css">
+    <link rel="stylesheet" href="/css/pres.flexboxgrid.min.css">
+    <link rel="stylesheet" href="/css/reveal.css">
+    <link rel="stylesheet" href="/css/sky.css">
+    <link rel="stylesheet" href="/css/pres.css">
+
+</head>
+
+<body>
+    <img id="fixed_icon" class="animated fadeInLeft" src="/img/icon.png" alt="My Convoy Icon">
+
+    <div class="reveal">
+        <div class="slides">
+
+
+            <section id="intro" class="animated opacity0">
+                <img class="stretch img0" data-src="/img/icon.png" alt="My Convoy">
+                <h2 class="pres-title">My Convoy</h2>
+                <h5 id="pitch" class="pres-pitch animated opacity0">Your Geographic Information System</h5>
+                <p class="marg0-b pad2-t t-small">
+                    Created by
+                </p>
+                <div class="row">
+                    <div class="col-xs">
+                        <p class="marg0">
+                            Robert Laverty
+                        </p>
+                        <p class="marg0 t-tiny">
+                            Technology
+                        </p>
+                        <a href="https://www.facebook.com/roblav96" target="_blank"><i class="ion-icon icon-logo-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/roblav96" target="_blank"><i class="ion-icon icon-logo-linkedin"></i></a>
+                        <a href="https://www.github.com/roblav96" target="_blank"><i class="ion-icon icon-logo-github"></i></a>
+                        <a href="mailto:rob@myconvoyapp.com" target="_blank"><i class="ion-icon icon-mail"></i></a>
+                    </div>
+                    <div class="col-xs">
+                        <p class="marg0">
+                            John Andreson
+                        </p>
+                        <p class="marg0 t-tiny">
+                            Business
+                        </p>
+                        <a href="https://www.facebook.com/j0hnnya23" target="_blank"><i class="ion-icon icon-logo-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/john-andreson-a662009a" target="_blank"><i class="ion-icon icon-logo-linkedin"></i></a>
+                        <a href="mailto:john@myconvoyapp.com" target="_blank"><i class="ion-icon icon-mail"></i></a>
+                        <a href="tel:+14017930747" target="_blank"><i class="ion-icon icon-call"></i></a>
+                    </div>
+                </div>
+
+            </section>
+
+            <section>
+                <h1>Problem</h1>
+                <h1 class="t-h1-icon"><i class="ion-icon icon-sad"></i></h1>
+                <p>
+                    People feel unsafe when they’re alone and want to stay connected when they’re part of a group
+                </p>
+            </section>
+
+            <section>
+                <h1>Solution</h1>
+                <h1 class="t-h1-icon"><i class="ion-icon icon-happy"></i></h1>
+                <p>
+                    Provide everyone an easier way to share their location and connect in real time
+                </p>
+            </section>
+
+            <section>
+                <h2>Company Mission</h2>
+                <h1 class="t-h1-icon"><i class="ion-icon icon-flag"></i></h1>
+                <p>
+                    To provide an easy to use, private, location awareness system so that people will be safer and more connected.
+                </p>
+            </section>
+
+            <section>
+                <h2>Introducing</h2>
+                <img class="stretch img0" data-src="/img/pres-icon-blk.png" alt="My Convoy">
+                <h2 class="t-inherit">My Convoy</h2>
+                <h5 class="t-inherit">Group Based Location Awareness</h5>
+                <p class="t-small">
+                    Def, Convoy: to accompany or escort, usually for protection
+                </p>
+            </section>
+
+            <!-- <section> -->
+            <section>
+                <h2>How It Works</h2>
+                <p>
+                    Create your personal "convoy" of "comrades" so that background geolocation updates can be sent to the
+                    people you have toggled on
+                </p>
+                <p class="t-tiny marg0">
+                    Def, Comrade: a companion who shares one's activities
+                </p>
+                <div class="row fragment marg0" data-fragment-index="1">
+                    <div class="col-xs">
+                        <p class="marg0 t-icon"><i class="ion-icon icon-contact"></i></p>
+                        <p class="marg0 t-bold t-small">App User</p>
+                    </div>
+                </div>
+                <div id="circle" class="row user-convoy fragment" data-fragment-index="1">
+                    <div class="col-xs">
+                        <p class="marg0 t-icon"><i class="ion-icon icon-pin"></i></p>
+                        <p class="t-tiny marg0">Mom</p>
+                    </div>
+                    <div class="col-xs">
+                        <p class="marg0 t-icon"><i class="ion-icon icon-pin"></i></p>
+                        <p class="t-tiny marg0">Dad</p>
+                    </div>
+                    <div class="col-xs">
+                        <p class="marg0 t-icon"><i class="ion-icon icon-pin"></i></p>
+                        <p class="t-tiny marg0">John</p>
+                    </div>
+                    <div class="col-xs">
+                        <p class="marg0 t-icon"><i class="ion-icon icon-pin"></i></p>
+                        <p class="t-tiny marg0">Rob</p>
+                    </div>
+                </div>
+                <p class="t-bold fragment" data-fragment-index="1">App User's Convoy</p>
+                <!-- <p class="t-tiny">(Press <i class="ion-icon icon-arrow-round-down"></i> arrow key for screens)</p> -->
+            </section>
+
+            <section>
+                <img class="stretch" data-src="/img/screens/ios-ph-comrades.jpg" alt="Manage Your Convoy">
+            </section>
+
+            <section>
+                <img class="stretch" data-src="/img/screens/ios-ph-map-overview.jpg" alt="View Your Convoy">
+            </section>
+
+            <section>
+                <img class="stretch" data-src="/img/screens/ios-ph-shout.jpg" alt="Shout Geographic Messages">
+            </section>
+
+            <section>
+                <img class="stretch" data-src="/img/screens/ios-ph-zone-geo.jpg" alt="Draw Geographic Zones">
+            </section>
+
+            <section>
+                <img class="stretch" data-src="/img/screens/ios-ph-zone-conf.jpg" alt="Configure Zones">
+            </section>
+
+            <section>
+                <img class="stretch" data-src="/img/screens/ios-ph-privacy.jpg" alt="Manage Your Privacy">
+            </section>
+            <!-- </section> -->
+
+            <section>
+                <h2>Innovations</h2>
+                <div class="row pres-row">
+                    <div class="col-xs">
+                        <h4 class="marg0"><i class="ion-icon icon-construct"></i> Individualize</h4>
+                        <ul class="ul-small fragment">
+                            <li>
+                                Build your own personal network of friends, family, colleagues, etc.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs">
+                        <h4 class="marg0"><i class="ion-icon icon-switch"></i> Simple</h4>
+                        <ul class="ul-small fragment">
+                            <li>
+                                Toggle a comrade when you want them to receive location updates from you
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs">
+                        <h4 class="marg0"><i class="ion-icon icon-lock"></i> Private</h4>
+                        <ul class="ul-small fragment">
+                            <li>
+                                You don't request someones location, you only grant them access to yours
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row pres-row">
+                    <div class="col-xs">
+                        <h4 class="marg0"><i class="ion-icon icon-megaphone"></i> Shout</h4>
+                        <ul class="ul-small fragment">
+                            <li>
+                                Share a message and/or multi-media anywhere on the map
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs">
+                        <h4 class="marg0"><i class="ion-icon icon-infinite"></i> Unlimited</h4>
+                        <ul class="ul-small fragment">
+                            <li>
+                                If you want, keep the service enabled 24/7 and toggle an unlimited number of comrades
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs">
+                        <h4 class="marg0"><i class="ion-icon icon-refresh-circle"></i> Automated</h4>
+                        <ul class="ul-small fragment">
+                            <li>
+                                Everything is done automatically in the background
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row pres-row">
+                    <div class="col-xs">
+                        <h4 class="marg0"><i class="ion-icon icon-globe"></i> Universal</h4>
+                        <ul class="ul-small fragment">
+                            <li>
+                                The vast flexibility of features and options allows everyone to use it however they find it useful
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs">
+                        <h4 class="marg0"><i class="ion-icon icon-desktop"></i> Desktop</h4>
+                        <ul class="ul-small fragment">
+                            <li>
+                                Use My Convoy on your desktop, laptop, or smart TV
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs">
+                        <h4 class="marg0"><i class="ion-icon icon-battery-charging"></i> Efficient</h4>
+                        <ul class="ul-small fragment">
+                            <li>
+                                Intelligently decides when to enable and disable the GPS based on your movements
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>Development is a breeze</h3>
+                <p>
+                    <strong class="t-bold">Hybrid App</strong> - Write program once, deploy to all platforms
+                </p>
+                <div class="dev-row">
+                    <div class="row">
+                        <div class="col-xs">
+                            <p class="marg0 t-icon"><i class="ion-icon icon-logo-html5"></i></p>
+                            <p class="t-tiny marg0">HTML5</p>
+                        </div>
+                        <div class="col-xs">
+                            <p class="marg0 t-icon"><i class="ion-icon icon-logo-css3"></i></p>
+                            <p class="t-tiny marg0">CSS3</p>
+                        </div>
+                        <div class="col-xs">
+                            <p class="marg0 t-icon"><i class="ion-icon icon-logo-javascript"></i></p>
+                            <p class="t-tiny marg0">Javascript</p>
+                        </div>
+                        <div class="col-xs">
+                            <p class="marg0 t-icon"><i class="ion-icon icon-ionic"></i></p>
+                            <p class="t-tiny marg0">Ionic Framework</p>
+                        </div>
+                        <div class="col-xs">
+                            <p class="marg0 t-icon"><i class="ion-icon icon-logo-nodejs"></i></p>
+                            <p class="t-tiny marg0">Node.js</p>
+                        </div>
+                        <div class="col-xs">
+                            <img class="marg0 img0 t-img" data-src="/img/redis.png" alt="Redis">
+                            <p class="t-tiny marg0">Redis</p>
+                        </div>
+                    </div>
+                    <p>Development Stack</p>
+                </div>
+                <div class="dev-row fragment">
+                    <div class="row">
+                        <div class="col-xs">
+                            <p class="marg0 t-icon"><i class="ion-icon icon-logo-apple"></i></p>
+                            <p class="t-tiny marg0">iOS</p>
+                        </div>
+                        <div class="col-xs">
+                            <p class="marg0 t-icon"><i class="ion-icon icon-logo-android"></i></p>
+                            <p class="t-tiny marg0">Android</p>
+                        </div>
+                        <div class="col-xs">
+                            <p class="marg0 t-icon"><i class="ion-icon icon-desktop"></i></p>
+                            <p class="t-tiny marg0">Desktop</p>
+                        </div>
+                    </div>
+                    <p>Deployed Platforms</p>
+                </div>
+                <p class="fragment">Effortless to pivot in whichever way the market demands</p>
+            </section>
+
+            <section>
+                <h2>Competition</h2>
+                <div class="row">
+                    <div class="col-xs">
+                        <h4 class="marg0">Companion</h4>
+                        <ul class="ul-tiny fragment" data-fragment-index="1">
+                            <li>Most users review this as a poor application</li>
+                            <li>Reported dropout signals, inaccurate location tracking</li>
+                            <li>Only connects with 1 companion at a time</li>
+                            <li>No ability to scale, only communicates with one person at a time</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs">
+                        <h4 class="marg0">Glympse</h4>
+                        <ul class="ul-tiny fragment" data-fragment-index="3">
+                            <li>Over 500,000 downloads</li>
+                            <li>Very simple to use</li>
+                            <li>Only designed for going from point A to point B</li>
+                            <li>Limited in features</li>
+                            <li>Only broadcasts location for short durations of time (less than 4hr)</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs">
+                        <h4 class="marg0">Life360</h4>
+                        <ul class="ul-tiny fragment" data-fragment-index="5">
+                            <li>Very consistent application</li>
+                            <li>Well designed UI</li>
+                            <li>More family oriented with too many meaningless features; e.g. shopping list)</li>
+                            <li>Always tracking users, not able to suspend service</li>
+                            <li>Monthly fee of $5 is expensive</li>
+                        </ul>
+                    </div>
+                </div>
+                <h4 class="marg0 t-center">My Convoy</h4>
+                <div class="row">
+                    <div class="col-xs fragment t-left" data-fragment-index="2">
+                        <ul class="ul-tiny">
+                            <li>Simply toggle an unlimited number of comrades</li>
+                            <li>High scalability</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs fragment t-left" data-fragment-index="4">
+                        <ul class="ul-tiny">
+                            <li>Runs in background, no need to continuously input your destination and users</li>
+                            <li>More features; e.g. shout, chat, zones</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs fragment t-left" data-fragment-index="6">
+                        <ul class="ul-tiny">
+                            <li>Free</li>
+                            <li>User can disable service completely at their own discretion</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3 class="t-inherit fragment" data-fragment-index="7">Inadequate solutions to location based awareness</h3>
+            </section>
+
+            <section>
+                <h2>Validation</h2>
+                <div class="row pres-row">
+                    <div class="col-xs">
+                        <img class="" data-src="/img/valid1.png" alt="Valid 1">
+                        <img class="" data-src="/img/valid3.png" alt="Valid 3">
+                        <img class="" data-src="/img/valid2.png" alt="Valid 2">
+                        <p class="t-tiny t-right marg0">
+                            <a>- US Military Training Coordinator</a>
+                        </p>
+                    </div>
+                    <div class="col-xs fragment">
+                        <img class="" data-src="/img/blue-force.jpg" alt="Blue Force">
+                        <p>"$134.1M for Blue Force Tracker Global Services"</p>
+                        <p class="t-tiny t-right">
+                            <a href="http://www.defenseindustrydaily.com/1341m-for-blue-force-tracker-global-services-0427/" target="_blank">- Defense Industry Daily</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Life Enhancements</h2>
+                <div class="row pres-row">
+                    <div class="col-xs">
+                        <h3 class="marg0 t-h4-icon"><i class="ion-icon icon-medical"></i></h3>
+                        <p class="marg0">Increased Safety</p>
+                    </div>
+                    <div class="col-xs">
+                        <h3 class="marg0 t-h4-icon"><i class="ion-icon icon-beer"></i></h3>
+                        <p class="marg0">Bar Crawl</p>
+                    </div>
+                    <div class="col-xs">
+                        <h3 class="marg0 t-h4-icon"><i class="ion-icon icon-school"></i></h3>
+                        <p class="marg0">Parties</p>
+                    </div>
+                    <div class="col-xs">
+                        <h3 class="marg0 t-h4-icon"><i class="ion-icon icon-walk"></i></h3>
+                        <p class="marg0">Lonely Walks</p>
+                    </div>
+                </div>
+                <div class="row pres-row">
+                    <div class="col-xs">
+                        <h3 class="marg0 t-h4-icon"><i class="ion-icon icon-bonfire"></i></h3>
+                        <p class="marg0">Outdoor Activities</p>
+                    </div>
+                    <div class="col-xs">
+                        <h3 class="marg0 t-h4-icon"><i class="ion-icon icon-american-football"></i></h3>
+                        <p class="marg0">Large Gatherings</p>
+                    </div>
+                    <div class="col-xs">
+                        <h3 class="marg0 t-h4-icon"><i class="ion-icon icon-thunderstorm"></i></h3>
+                        <p class="marg0">Disaster Organization</p>
+                    </div>
+                    <div class="col-xs">
+                        <h3 class="marg0 t-h4-icon"><i class="ion-icon icon-car"></i></h3>
+                        <p class="marg0">Destination Coordination</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Target Markets</h2>
+                <div class="row pres-row">
+                    <div class="col-xs">
+                        <h3 class="marg0 t-h3-icon"><i class="ion-icon icon-people"></i></h3>
+                        <h4 class="marg0">Families</h4>
+                        <ul class="ul-tiny fragment">
+                            <li>
+                                See where your family members are at any point in time. Great for elders and children
+                            </li>
+                            <li>
+                                Draw geographic zones on the map and get notified when your child enters and/or exits the zone
+                            </li>
+                            <li>
+                                Get notified if your child's speed reaches a set threshold
+                            </li>
+                            <li>
+                                Register your child as an "administered account" to have more control over their activities
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs">
+                        <h3 class="marg0 t-h3-icon"><i class="ion-icon icon-briefcase"></i></h3>
+                        <h4 class="marg0">Businesses</h4>
+                        <ul class="ul-tiny fragment">
+                            <li>
+                                Automate labor hours by setting geographic zones on the map
+                            </li>
+                            <li>
+                                Track your employees location and driving speed while they're out in the field. Get notified if speed
+                                reaches a set threshold
+                            </li>
+                            <li>
+                                Register your employees as an "administered account" to have more control over their activities
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs">
+                        <h3 class="marg0 t-h3-icon"><i class="ion-icon icon-beer"></i></h3>
+                        <h4 class="marg0">Young Adults</h4>
+                        <ul class="ul-tiny fragment">
+                            <li>
+                                Use the map to see which bar your friends are at in-case you get split-up
+                            </li>
+                            <li>
+                                Shout a message anywhere on the map that your friends can see. Attach pictures and videos to share moments
+                                like Snapchat
+                            </li>
+                            <li>
+                                Draw a home-base zone on the map to automatically notify your friends you made it home safe
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Marketing Strategy</h2>
+                <div class="row pres-row">
+                    <div class="col-xs">
+                        <h3 class="marg0 t-h4-icon"><i class="ion-icon icon-logo-facebook"></i></h3>
+                        <p class="marg0">Social Media Campaigns</p>
+                    </div>
+                    <div class="col-xs">
+                        <h3 class="marg0 t-h4-icon"><i class="ion-icon icon-create"></i></h3>
+                        <p class="marg0">Reach Out To Blogs</p>
+                    </div>
+                    <div class="col-xs">
+                        <h3 class="marg0 t-h4-icon"><i class="ion-icon icon-refresh"></i></h3>
+                        <p class="marg0">Solid Feedback Loop</p>
+                    </div>
+                </div>
+                <div class="row pres-row">
+                    <div class="col-xs">
+                        <h3 class="marg0 t-h4-icon"><i class="ion-icon icon-appstore"></i></h3>
+                        <p class="marg0">App Store Optimization</p>
+                    </div>
+                    <div class="col-xs">
+                        <h3 class="marg0 t-h4-icon"><i class="ion-icon icon-trophy"></i></h3>
+                        <p class="marg0">Featured On Review Sites</p>
+                    </div>
+                    <div class="col-xs">
+                        <h3 class="marg0 t-h4-icon"><i class="ion-icon icon-share"></i></h3>
+                        <p class="marg0">Influencer Sharing</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Revenue Model</h2>
+                <h1 class="t-h1-icon"><i class="ion-icon icon-logo-usd"></i></h1>
+            </section>
+
+            <section id="contact_us">
+                <h3 class="t-bold">Please contact us to see the rest of the presentation</h3>
+                <div class="row pres-row">
+                    <div class="col-xs">
+                        <a href="tel:+14017930747" target="_blank">
+                            <h3 class="marg0 t-h3-icon"><i class="ion-icon icon-call"></i></h3>
+                            <p class="marg0">401-793-0747</p>
+                        </a>
+                    </div>
+                    <div class="col-xs">
+                        <a href="mailto:invest@myconvoyapp.com" target="_blank">
+                            <h3 class="marg0 t-h3-icon"><i class="ion-icon icon-mail"></i></h3>
+                            <p class="marg0">invest@myconvoyapp.com</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 
+███╗   ██╗ ██████╗     ██████╗ ███████╗███████╗██╗  ██╗██╗███╗   ██╗ ██████╗ ██╗
+████╗  ██║██╔═══██╗    ██╔══██╗██╔════╝██╔════╝██║ ██╔╝██║████╗  ██║██╔════╝ ██║
+██╔██╗ ██║██║   ██║    ██████╔╝█████╗  █████╗  █████╔╝ ██║██╔██╗ ██║██║  ███╗██║
+██║╚██╗██║██║   ██║    ██╔═══╝ ██╔══╝  ██╔══╝  ██╔═██╗ ██║██║╚██╗██║██║   ██║╚═╝
+██║ ╚████║╚██████╔╝    ██║     ███████╗███████╗██║  ██╗██║██║ ╚████║╚██████╔╝██╗
+╚═╝  ╚═══╝ ╚═════╝     ╚═╝     ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝
+                            PLEASE CONTACT US :)
+                            PHONE 401-864-3464
+                            EMAIL invest@myconvoyapp.com
+             -->
+
+            <section>
+                <h2>Big Data</h2>
+                <div class="row">
+                    <div class="col-xs t-left fragment">
+                        <h4 class="marg0 t-center">How?</h4>
+                        <ul class="ul-small">
+                            <li>Sell anonymous location data to big data companies for research and analysis</li>
+                        </ul>
+                        <h4 class="marg0 marg-top1 t-center">Companies</h4>
+                        <ul class="ul-small">
+                            <li>ESRI</li>
+                            <li>Yelp</li>
+                            <li>Velti</li>
+                        </ul>
+                        <p class="t-small marg0 marg-top1">"Location is the key to unlocking value in mobile advertising"</p>
+                        <p class="t-tiny t-right marg0">
+                            <a href="http://www.forbes.com/sites/ciocentral/2013/03/19/redefining-location-to-unlock-the-true-value-of-mobile"
+                                target="_blank">- Michael Fordyce, CEO of JiWire, Forbes Blog</a>
+                        </p>
+                    </div>
+                    <div class="col-xs fragment">
+                        <h4 class="marg0">Meta Data</h4>
+                        <ul class="ul-small">
+                            <li>Longitude &amp; Latitude</li>
+                            <li>Speed</li>
+                            <li>Heading</li>
+                            <li>Altitude</li>
+                            <li>Activity (driving, walking, bike, etc.)</li>
+                            <li>Age</li>
+                            <li>Gender</li>
+                            <li>Device Info (manufacture, type, screen size, etc.)</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs t-left fragment">
+                        <h4 class="marg0 t-center">Value</h4>
+                        <ul class="ul-small">
+                            <li>Average user submits 73.62 location updates per day</li>
+                            <li>
+                                "India-based company purchased 2.5 million insights from iSIGN for $500,000. Essentially, this company
+                                paid 20 cents for each record of activity"
+                                <p class="t-tiny t-right marg0">
+                                    <a href="http://www.forbes.com/sites/ciocentral/2013/03/19/redefining-location-to-unlock-the-true-value-of-mobile"
+                                        target="_blank">- Michael Steinhart, Executive Editor @ All Analytics, 2013</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 
+███╗   ██╗ ██████╗     ██████╗ ███████╗███████╗██╗  ██╗██╗███╗   ██╗ ██████╗ ██╗
+████╗  ██║██╔═══██╗    ██╔══██╗██╔════╝██╔════╝██║ ██╔╝██║████╗  ██║██╔════╝ ██║
+██╔██╗ ██║██║   ██║    ██████╔╝█████╗  █████╗  █████╔╝ ██║██╔██╗ ██║██║  ███╗██║
+██║╚██╗██║██║   ██║    ██╔═══╝ ██╔══╝  ██╔══╝  ██╔═██╗ ██║██║╚██╗██║██║   ██║╚═╝
+██║ ╚████║╚██████╔╝    ██║     ███████╗███████╗██║  ██╗██║██║ ╚████║╚██████╔╝██╗
+╚═╝  ╚═══╝ ╚═════╝     ╚═╝     ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝
+                            PLEASE CONTACT US :)
+                            PHONE 401-864-3464
+                            EMAIL invest@myconvoyapp.com
+             -->
+
+            <section>
+                <h3>Location Based Advertising</h3>
+                <div class="row">
+                    <div class="col-xs t-left fragment">
+                        <h4 class="marg0 t-center">How?</h4>
+                        <ul class="ul-small">
+                            <li>Sell advertisement opportunities targeting users in the vicinity of a business</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs t-left fragment">
+                        <h4 class="marg0 t-center">Example</h4>
+                        <!-- <video class="stretch" data-autoplay data-src="/img/video.mp4"></video> -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- 
+███╗   ██╗ ██████╗     ██████╗ ███████╗███████╗██╗  ██╗██╗███╗   ██╗ ██████╗ ██╗
+████╗  ██║██╔═══██╗    ██╔══██╗██╔════╝██╔════╝██║ ██╔╝██║████╗  ██║██╔════╝ ██║
+██╔██╗ ██║██║   ██║    ██████╔╝█████╗  █████╗  █████╔╝ ██║██╔██╗ ██║██║  ███╗██║
+██║╚██╗██║██║   ██║    ██╔═══╝ ██╔══╝  ██╔══╝  ██╔═██╗ ██║██║╚██╗██║██║   ██║╚═╝
+██║ ╚████║╚██████╔╝    ██║     ███████╗███████╗██║  ██╗██║██║ ╚████║╚██████╔╝██╗
+╚═╝  ╚═══╝ ╚═════╝     ╚═╝     ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝
+                            PLEASE CONTACT US :)
+                            PHONE 401-864-3464
+                            EMAIL invest@myconvoyapp.com
+             -->
+
+            <section>
+                <h2>Enterprise Licenses</h2>
+                <div class="row">
+                    <div class="col-xs t-left fragment">
+                        <h4 class="marg0 t-center">How?</h4>
+                        <ul class="ul-small">
+                            <li>Sell enterprise licenses to corporations which unlock certain plug-ins</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs t-left fragment">
+                        <h4 class="marg0 t-center">Plug-ins</h4>
+                        <ul class="ul-small">
+                            <li>Track employees</li>
+                            <li>Automate labor hours</li>
+                            <li>Delivery tacking system</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 
+███╗   ██╗ ██████╗     ██████╗ ███████╗███████╗██╗  ██╗██╗███╗   ██╗ ██████╗ ██╗
+████╗  ██║██╔═══██╗    ██╔══██╗██╔════╝██╔════╝██║ ██╔╝██║████╗  ██║██╔════╝ ██║
+██╔██╗ ██║██║   ██║    ██████╔╝█████╗  █████╗  █████╔╝ ██║██╔██╗ ██║██║  ███╗██║
+██║╚██╗██║██║   ██║    ██╔═══╝ ██╔══╝  ██╔══╝  ██╔═██╗ ██║██║╚██╗██║██║   ██║╚═╝
+██║ ╚████║╚██████╔╝    ██║     ███████╗███████╗██║  ██╗██║██║ ╚████║╚██████╔╝██╗
+╚═╝  ╚═══╝ ╚═════╝     ╚═╝     ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝
+                            PLEASE CONTACT US :)
+                            PHONE 401-864-3464
+                            EMAIL invest@myconvoyapp.com
+             -->
+
+            <section>
+                <h2>Next Steps</h2>
+                <div class="row">
+                    <div class="col-xs-3 t-left">
+                    </div>
+                    <div class="col-xs t-left">
+                        <h4 class="marg0 t-bold">Expenses</h4>
+                    </div>
+                </div>
+                <div class="row fragment t-normal">
+                    <div class="col-xs-3 t-left">
+                        <p class="t-bold marg0">$100,000</p>
+                    </div>
+                    <div class="col-xs t-left">
+                        <p class="marg0">Marketing/User Acquisition Campaign; e.g. Facebook, Emails, Fees, Adwords, etc.</p>
+                    </div>
+                </div>
+                <div class="row fragment t-normal">
+                    <div class="col-xs-3 t-left">
+                        <p class="t-bold marg0">$10,000</p>
+                    </div>
+                    <div class="col-xs t-left">
+                        <p class="marg0">Miscellaneous expenses</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3 t-left">
+                    </div>
+                    <div class="col-xs t-left">
+                        <h4 class="marg0 t-bold">Tools and Materials</h4>
+                    </div>
+                </div>
+                <div class="row fragment t-normal">
+                    <div class="col-xs-3 t-left">
+                        <p class="t-bold marg0">$25,000</p>
+                    </div>
+                    <div class="col-xs t-left">
+                        <p class="marg0">Server hardware expansion across country</p>
+                    </div>
+                </div>
+                <div class="row fragment t-normal">
+                    <div class="col-xs-3 t-left">
+                        <p class="t-bold marg0">$5,000</p>
+                    </div>
+                    <div class="col-xs t-left">
+                        <p class="marg0">
+                            Per every additional 100,000 users for colocation server hosting
+                        </p>
+                    </div>
+                </div>
+                <div class="row fragment t-normal">
+                    <div class="col-xs-3 t-left">
+                        <p class="t-bold marg0">$500/month</p>
+                    </div>
+                    <div class="col-xs t-left">
+                        <p class="marg0">Per 1,000,000 map views from Mapbox</p>
+                    </div>
+                </div>
+                <div class="row fragment t-normal">
+                    <div class="col-xs-3 t-left">
+                        <p class="t-bold marg0">$75/month/server</p>
+                    </div>
+                    <div class="col-xs t-left">
+                        <p class="marg0">10Mbps bandwidth, (10Mb = 169,491 location updates/second)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 
+███╗   ██╗ ██████╗     ██████╗ ███████╗███████╗██╗  ██╗██╗███╗   ██╗ ██████╗ ██╗
+████╗  ██║██╔═══██╗    ██╔══██╗██╔════╝██╔════╝██║ ██╔╝██║████╗  ██║██╔════╝ ██║
+██╔██╗ ██║██║   ██║    ██████╔╝█████╗  █████╗  █████╔╝ ██║██╔██╗ ██║██║  ███╗██║
+██║╚██╗██║██║   ██║    ██╔═══╝ ██╔══╝  ██╔══╝  ██╔═██╗ ██║██║╚██╗██║██║   ██║╚═╝
+██║ ╚████║╚██████╔╝    ██║     ███████╗███████╗██║  ██╗██║██║ ╚████║╚██████╔╝██╗
+╚═╝  ╚═══╝ ╚═════╝     ╚═╝     ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝
+                            PLEASE CONTACT US :)
+                            PHONE 401-864-3464
+                            EMAIL invest@myconvoyapp.com
+             -->
+
+            <section>
+                <h2>Just the beginning...</h2>
+                <img class="stretch img0" data-src="/img/rlware.png" alt="RLware">
+                <h2 class="t-inherit marg0">
+                    <a href="https://rlware.com/" target="_blank">RLware</a>
+                </h2>
+                <p class="t-italic marg0">Elite Software</p>
+            </section>
+
+            <!-- 
+███╗   ██╗ ██████╗     ██████╗ ███████╗███████╗██╗  ██╗██╗███╗   ██╗ ██████╗ ██╗
+████╗  ██║██╔═══██╗    ██╔══██╗██╔════╝██╔════╝██║ ██╔╝██║████╗  ██║██╔════╝ ██║
+██╔██╗ ██║██║   ██║    ██████╔╝█████╗  █████╗  █████╔╝ ██║██╔██╗ ██║██║  ███╗██║
+██║╚██╗██║██║   ██║    ██╔═══╝ ██╔══╝  ██╔══╝  ██╔═██╗ ██║██║╚██╗██║██║   ██║╚═╝
+██║ ╚████║╚██████╔╝    ██║     ███████╗███████╗██║  ██╗██║██║ ╚████║╚██████╔╝██╗
+╚═╝  ╚═══╝ ╚═════╝     ╚═╝     ╚══════╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝
+                            PLEASE CONTACT US :)
+                            PHONE 401-864-3464
+                            EMAIL invest@myconvoyapp.com
+             -->
+
+        </div>
+    </div>
+
+    <!-- <script src="/lib/bluebird/js/browser/bluebird.core.min.js"></script> -->
+    <!-- <script src="/lib/lodash/dist/lodash.min.js"></script> -->
+    <!-- <script src="/lib/jquery/dist/jquery.min.js"></script> -->
+
+    <script src="/js/head.min.js"></script>
+    <script src="/js/reveal.min.js"></script>
+    <script src="/js/pres.js"></script>
+
+    <script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        history: true,
+    });
+
+    </script>
+
+</body>
+
+</html>
+
