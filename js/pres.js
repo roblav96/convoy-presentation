@@ -1,6 +1,6 @@
 //
 
-window.IS_VIEWING = false
+window.IS_VIEWING = true
 window.CLICKS = 0
 
 var sheets = []
@@ -28,8 +28,8 @@ window.CAN_SLIDE = function ( TO_SLIDE ) {
 	}
 
 	if ( window.IS_VIEWING == true ) {
-		if ( TO_SLIDE >= 19 ) {
-			Reveal.slide( 19 )
+		if ( TO_SLIDE >= 20 ) {
+			Reveal.slide( 20 )
 		}
 	}
 }
@@ -74,8 +74,8 @@ document.getElementById( 'fixed_icon' ).addEventListener( "click", function ( ev
 	if ( window.CLICKS == 5 ) {
 		window.IS_VIEWING = false
 		document.getElementById( 'contact_us' ).remove()
-		if ( Reveal.getState().indexh == 19 ) {
-			Reveal.slide( 19 )
+		if ( Reveal.getState().indexh == 20 ) {
+			Reveal.slide( 20 )
 		}
 	}
 } )
