@@ -1,6 +1,6 @@
 //
 
-window.IS_VIEWING = true
+window.IS_VIEWING = false
 window.CLICKS = 0
 
 var sheets = []
