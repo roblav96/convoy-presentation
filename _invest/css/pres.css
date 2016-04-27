@@ -99,6 +99,21 @@ body.platform-android * {
 	padding-bottom: 2.5rem !important;
 }
 
+.img-store {
+	margin: 0px !important;
+	width: 50% !important;
+}
+
+.img-store-apple {
+	float: right !important;
+	margin-right: 1rem !important;
+}
+
+.img-store-android {
+	float: left !important;
+	margin-left: 1rem !important;
+}
+
 
 /*
 	MISCELLANEOUS
