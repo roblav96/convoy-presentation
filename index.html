@@ -19,6 +19,16 @@
     <link rel="stylesheet" href="/css/sky.css">
     <link rel="stylesheet" href="/css/pres.css">
 
+    <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' :
+        'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+
+    </script>
+
 </head>
 
 <body>
@@ -29,18 +39,18 @@
 
 
             <section id="intro" class="animated opacity0">
-                <img class="stretch img0" data-src="/img/icon.png" alt="My Convoy">
+                <img class="stretch img0" src="/img/icon.png" alt="My Convoy">
                 <h2 class="pres-title">My Convoy</h2>
                 <h5 id="pitch" class="pres-pitch animated opacity0">Your Personal Geographic Information System</h5>
                 <div class="row">
                     <div class="col-xs">
                         <a href="https://itunes.apple.com/us/app/my-convoy/id1063701692&mt=8" target="_blank">
-                            <img class="img-store img-store-apple img0" data-src="/img/apple.png" alt="My Convoy - iOS">
+                            <img class="img-store img-store-apple img0" src="/img/apple.png" alt="My Convoy - iOS">
                         </a>
                     </div>
                     <div class="col-xs">
                         <a href="https://play.google.com/store/apps/details?id=com.tech401.convoy" target="_blank">
-                            <img class="img-store img-store-android img0" data-src="/img/android.png" alt="My Convoy - Android">
+                            <img class="img-store img-store-android img0" src="/img/android.png" alt="My Convoy - Android">
                         </a>
                     </div>
                 </div>
@@ -102,7 +112,7 @@
 
             <section>
                 <h2>Introducing</h2>
-                <img class="stretch img0" data-src="/img/pres-icon-blk.png" alt="My Convoy">
+                <img class="stretch img0" src="/img/pres-icon-blk.png" alt="My Convoy">
                 <h2 class="t-inherit">My Convoy</h2>
                 <h5 class="t-inherit">The first social location app that keeps you safe</h5>
                 <p class="t-small">
@@ -206,15 +216,15 @@
                 <h2>Validation</h2>
                 <div class="row pres-row">
                     <div class="col-xs">
-                        <img class="" data-src="/img/valid1.png" alt="Valid 1">
-                        <img class="" data-src="/img/valid3.png" alt="Valid 3">
-                        <img class="" data-src="/img/valid2.png" alt="Valid 2">
+                        <img class="" src="/img/valid1.png" alt="Valid 1">
+                        <img class="" src="/img/valid3.png" alt="Valid 3">
+                        <img class="" src="/img/valid2.png" alt="Valid 2">
                         <p class="t-tiny t-right marg0">
                             <a>- US Military Training Coordinator</a>
                         </p>
                     </div>
                     <div class="col-xs fragment">
-                        <img class="" data-src="/img/blue-force.jpg" alt="Blue Force">
+                        <img class="" src="/img/blue-force.jpg" alt="Blue Force">
                         <p>"$134.1M for Blue Force Tracker Global Services"</p>
                         <p class="t-tiny t-right">
                             <a href="http://www.defenseindustrydaily.com/1341m-for-blue-force-tracker-global-services-0427/" target="_blank">- Defense Industry Daily</a>
@@ -224,19 +234,19 @@
             </section>
 
             <section>
-                <img class="stretch" data-src="/img/screens/ios-ph-comrades.jpg" alt="Manage Your Convoy">
+                <img class="stretch" src="/img/screens/ios-ph-comrades.jpg" alt="Manage Your Convoy">
             </section>
 
             <section>
-                <img class="stretch" data-src="/img/screens/ios-ph-shout.jpg" alt="Shout Geographic Messages">
+                <img class="stretch" src="/img/screens/ios-ph-shout.jpg" alt="Shout Geographic Messages">
             </section>
 
             <section>
-                <img class="stretch" data-src="/img/screens/ios-ph-map-overview.jpg" alt="View Your Convoy">
+                <img class="stretch" src="/img/screens/ios-ph-map-overview.jpg" alt="View Your Convoy">
             </section>
 
             <section>
-                <img class="stretch" data-src="/img/screens/ios-ph-privacy.jpg" alt="Manage Your Privacy">
+                <img class="stretch" src="/img/screens/ios-ph-privacy.jpg" alt="Manage Your Privacy">
             </section>
 
             <section>
@@ -349,7 +359,7 @@
                             <p class="t-tiny marg0">Node.js</p>
                         </div>
                         <div class="col-xs">
-                            <img class="marg0 img0 t-img" data-src="/img/redis.png" alt="Redis">
+                            <img class="marg0 img0 t-img" src="/img/redis.png" alt="Redis">
                             <p class="t-tiny marg0">Redis</p>
                         </div>
                     </div>
@@ -529,7 +539,7 @@
 
             <section>
                 <h2>Just the beginning...</h2>
-                <img class="stretch img0" data-src="/img/rlware.png" alt="RLware">
+                <img class="stretch img0" src="/img/rlware.png" alt="RLware">
                 <h2 class="t-inherit marg0">
                     <a href="https://rlware.com/" target="_blank">RLware</a>
                 </h2>
