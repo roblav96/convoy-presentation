@@ -119,6 +119,10 @@ body.platform-android * {
 	MISCELLANEOUS
 */
 
+.video {
+	/*max-height: 720px !important;*/
+}
+
 .ion-color-assertive {
     color: #ef473a !important;
 }
