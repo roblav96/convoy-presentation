@@ -93,25 +93,25 @@ body.platform-android * {
 }
 
 #circle {
-	border: 1px solid #333 !important;
-	border-radius: 50% !important;
-	padding-top: 2.5rem !important;
-	padding-bottom: 2.5rem !important;
+    border: 1px solid #333 !important;
+    border-radius: 50% !important;
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
 }
 
 .img-store {
-	margin: 0px !important;
-	width: 50% !important;
+    margin: 0px !important;
+    width: 50% !important;
 }
 
 .img-store-apple {
-	float: right !important;
-	margin-right: 1rem !important;
+    float: right !important;
+    margin-right: 1rem !important;
 }
 
 .img-store-android {
-	float: left !important;
-	margin-left: 1rem !important;
+    float: left !important;
+    margin-left: 1rem !important;
 }
 
 
@@ -119,8 +119,14 @@ body.platform-android * {
 	MISCELLANEOUS
 */
 
+.quote {
+	font-style: italic !important;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25) !important;
+    padding: 2rem !important;
+}
+
 .hide-me {
-	display: none !important;
+    display: none !important;
 }
 
 i.ion-icon {
@@ -163,6 +169,10 @@ a > i.ion-icon {
 
 .t-normal {
     font-size: 1.6rem !important;
+}
+
+.t-size-15 {
+    font-size: 1.5rem !important;
 }
 
 .t-size-16 {
@@ -275,12 +285,12 @@ a > i.ion-icon {
 }
 
 .t-img {
-	padding-top: 10px !important;
-	height: 74px !important;
+    padding-top: 10px !important;
+    height: 74px !important;
 }
 
 .t-money {
-	margin-right: 1rem !important;
+    margin-right: 1rem !important;
 }
 
 .top-right {
