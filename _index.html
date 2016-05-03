@@ -223,7 +223,7 @@
                 </div>
             </section>
 
-            <section>
+            <section id="slide_demo">
                 <h3>Location Based Advertising</h3>
                 <div class="row">
                     <div class="col-xs t-left fragment">
@@ -241,9 +241,13 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-xs t-left fragment">
+                    <div id="demo_frag" class="col-xs t-left fragment">
                         <h3 class="t-center">Demo</h3>
-                        <video class="video" controls src="/img/demo-720.mp4"></video>
+                        <video id="demo" class="video" controls src="/img/demo-720.mp4"></video>
+                        <center>
+                            <i id="demo_play" class="fragment current-visible t-h4-icon ion-icon icon-play"></i>
+                            <i id="demo_pause" class="fragment current-visible t-h4-icon ion-icon icon-pause"></i>
+                        </center>
                     </div>
                 </div>
             </section>
@@ -721,8 +725,8 @@
     <script src="/js/pres.js"></script>
 
     <script>
-    if (location.pathname == '/awesome') {
-        Reveal.initialize({
+    // if (location.pathname == '/awesome') {
+    Reveal.initialize({
             history: true,
             multiplex: {
                 secret: '1462310921167139262',
@@ -737,29 +741,29 @@
                 async: true
             }]
         })
-    } else {
-        Reveal.initialize({
-            history: false,
-            controls: false,
-            keyboard: false,
-            overview: false,
-            touch: false,
-            mouseWheel: false,
-            hideAddressBar: true,
-            multiplex: {
-                secret: null,
-                id: '048cda8c5359d020',
-                url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh',
-            },
-            dependencies: [{
-                src: '/js/socket.io-1.4.5.js',
-                async: true
-            }, {
-                src: '/js/client-pres.js',
-                async: true
-            }]
-        })
-    }
+        // } else {
+        // Reveal.initialize({
+        //     history: false,
+        //     controls: false,
+        //     keyboard: false,
+        //     overview: false,
+        //     touch: false,
+        //     mouseWheel: false,
+        //     hideAddressBar: true,
+        //     multiplex: {
+        //         secret: null,
+        //         id: '048cda8c5359d020',
+        //         url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh',
+        //     },
+        //     dependencies: [{
+        //         src: '/js/socket.io-1.4.5.js',
+        //         async: true
+        //     }, {
+        //         src: '/js/client-pres.js',
+        //         async: true
+        //     }]
+        // })
+        // }
 
     </script>
 
