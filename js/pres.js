@@ -66,6 +66,10 @@ Reveal.addEventListener( 'slidechanged', function ( event ) {
 } )
 
 document.getElementById( 'fixed_icon' ).addEventListener( 'click', function ( evt ) {
+	if ( location.pathname == '/client' ) {
+		return
+	}
+	
 	Reveal.slide( 0 )
 
 	// if ( window.CLICKS == 5 ) {
