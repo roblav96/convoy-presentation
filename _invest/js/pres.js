@@ -65,11 +65,38 @@ Reveal.addEventListener( 'slidechanged', function ( event ) {
 	window.CAN_SLIDE( event.indexh )
 } )
 
+Reveal.addEventListener( "fragmentshown", function ( frag ) {
+	// console.log( 'SHOW > frag >', frag.fragment.id )
+
+	if ( frag.fragment.id == 'demo_frag' ) {
+		document.getElementById( 'demo' ).pause()
+		document.getElementById( 'demo' ).currentTime = 0
+	} else if ( frag.fragment.id == 'demo_play' ) {
+		document.getElementById( 'demo' ).play()
+	} else if ( frag.fragment.id == 'demo_pause' ) {
+		document.getElementById( 'demo' ).pause()
+	}
+} )
+
+Reveal.addEventListener( "fragmenthidden", function ( frag ) {
+	// console.log( 'HIDE > frag >', frag.fragment.id )
+
+	if ( frag.fragment.id == 'demo_frag' ) {
+		document.getElementById( 'demo' ).pause()
+		document.getElementById( 'demo' ).currentTime = 0
+	} else if ( frag.fragment.id == 'demo_play' ) {
+		document.getElementById( 'demo' ).pause()
+		document.getElementById( 'demo' ).currentTime = 0
+	} else if ( frag.fragment.id == 'demo_pause' ) {
+		document.getElementById( 'demo' ).play()
+	}
+} )
+
 document.getElementById( 'fixed_icon' ).addEventListener( 'click', function ( evt ) {
 	if ( location.pathname == '/client' ) {
 		return
 	}
-	
+
 	Reveal.slide( 0 )
 
 	// if ( window.CLICKS == 5 ) {
@@ -85,9 +112,6 @@ document.getElementById( 'fixed_icon' ).addEventListener( 'click', function ( ev
 	// 	}
 	// }
 } )
-
-
-
 
 
 
