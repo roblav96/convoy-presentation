@@ -716,19 +716,44 @@
         </div>
     </div>
 
-    <!-- <script src="/lib/bluebird/js/browser/bluebird.core.min.js"></script> -->
-    <!-- <script src="/lib/lodash/dist/lodash.min.js"></script> -->
-    <!-- <script src="/lib/jquery/dist/jquery.min.js"></script> -->
-
     <script src="/js/head.min.js"></script>
     <script src="/js/reveal.min.js"></script>
     <script src="/js/pres.js"></script>
 
     <script>
-    // More info https://github.com/hakimel/reveal.js#configuration
-    Reveal.initialize({
-        history: true,
-    });
+    if (location.pathname == '/awesome') {
+        Reveal.initialize({
+            history: true,
+            multiplex: {
+                secret: '1462310921167139262',
+                id: '048cda8c5359d020',
+                url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh',
+            },
+            dependencies: [{
+                src: '/js/socket.io-1.4.5.js',
+                async: true
+            }, {
+                src: '/js/master-pres.js',
+                async: true
+            }]
+        })
+    } else {
+        Reveal.initialize({
+            history: true,
+            multiplex: {
+                secret: null,
+                id: '048cda8c5359d020',
+                url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh',
+            },
+            dependencies: [{
+                src: '/js/socket.io-1.4.5.js',
+                async: true
+            }, {
+                src: '/js/client-pres.js',
+                async: true
+            }]
+        })
+    }
 
     </script>
 
