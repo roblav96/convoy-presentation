@@ -63,7 +63,7 @@ Reveal.addEventListener( 'ready', function () {
 	if ( window.axios ) {
 		axios( {
 			method: 'post',
-			url: 'http://myconvoyapp.com/api/addone',
+			url: 'https://myconvoyapp.com/api/addone',
 			data: {
 				route: 'invest',
 				site: 'invest',
