@@ -723,6 +723,7 @@
         </div>
     </div>
 
+    <script src="/js/axios.min.js"></script>
     <script src="/js/head.min.js"></script>
     <script src="/js/reveal.min.js"></script>
     <script src="/js/pres.js"></script>
@@ -743,6 +744,10 @@
                 src: '/js/master-pres.js',
                 async: true
             }]
+        })
+    } else if (location.pathname == '/investors') {
+        Reveal.initialize({
+            history: true
         })
     } else {
         Reveal.initialize({

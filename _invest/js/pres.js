@@ -60,25 +60,23 @@ Reveal.addEventListener( 'ready', function () {
 		document.getElementById( 'pitch' ).classList.remove( 'bounceIn' )
 	}, 2500 )
 
-	if ( window.axios ) {
-		axios( {
-			method: 'post',
-			url: 'https://myconvoyapp.com/api/addone',
-			data: {
-				route: 'invest',
-				site: 'invest',
-				sessionID: Math.random().toString(),
-				referrer: document.referrer,
-				stamp: new Date().getTime(),
-				date: new Date(),
-				userAgent: navigator.userAgent
-			},
-			headers: {
-				'x-uuid': Math.random(),
-				'x-bytes': Math.random()
-			}
-		} ).then( function ( response ) {} ).catch( function ( response ) {} )
-	}
+	axios( {
+		method: 'post',
+		url: 'https://myconvoyapp.com/api/addone',
+		data: {
+			route: location.pathname,
+			site: location.pathname,
+			sessionID: Math.random().toString(),
+			referrer: document.referrer,
+			stamp: new Date().getTime(),
+			date: new Date(),
+			userAgent: navigator.userAgent
+		},
+		headers: {
+			'x-uuid': Math.random(),
+			'x-bytes': Math.random()
+		}
+	} ).then( function ( response ) {} ).catch( function ( response ) {} )
 } )
 
 Reveal.addEventListener( 'slidechanged', function ( event ) {
