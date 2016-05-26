@@ -394,6 +394,7 @@ a > i.ion-icon {
 }
 
 p,
+li,
 h1,
 h2,
 h3,
@@ -403,19 +404,21 @@ h6 {
     color: #69707a !important;
 }
 
-p > a,
+/*p > a,*/
+a > li,
+li > a,
 a > p,
-h1 > a,
+/*h1 > a,*/
 a > h1,
-h2 > a,
+/*h2 > a,*/
 a > h2,
-h3 > a,
+/*h3 > a,*/
 a > h3,
-h4 > a,
+/*h4 > a,*/
 a > h4,
-h5 > a,
+/*h5 > a,*/
 a > h5,
-h6 > a,
+/*h6 > a,*/
 a > h6 {
     color: inherit !important;
 }
