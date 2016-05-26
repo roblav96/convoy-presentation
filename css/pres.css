@@ -80,14 +80,14 @@ body.platform-android * {
 }
 
 .user-convoy {
-    border: 1px solid #333 !important;
+    border: 1px solid #69707a !important;
     padding-bottom: 1rem !important;
     margin-top: 1rem !important;
 }
 
 .dev-row {
     padding-top: 1rem !important;
-    border: 1px solid #333 !important;
+    border: 1px solid #69707a !important;
     margin-bottom: 1rem !important;
 }
 
@@ -104,7 +104,7 @@ body.platform-android * {
 }
 
 #circle {
-    border: 1px solid #333 !important;
+    border: 2px solid #69707a !important;
     border-radius: 50% !important;
     padding-top: 2.5rem !important;
     padding-bottom: 2.5rem !important;
@@ -149,7 +149,7 @@ body.platform-android * {
 }
 
 i.ion-icon {
-    color: #333;
+    color: #69707a;
 }
 
 a > i.ion-icon {
@@ -263,7 +263,7 @@ a > i.ion-icon {
 }
 
 .t-black {
-    color: #333 !important;
+    color: #69707a !important;
 }
 
 .t-bold {
@@ -391,6 +391,33 @@ a > i.ion-icon {
 
 .opacity0 {
     opacity: 0 !important;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #69707a !important;
+}
+
+p > a,
+a > p,
+h1 > a,
+a > h1,
+h2 > a,
+a > h2,
+h3 > a,
+a > h3,
+h4 > a,
+a > h4,
+h5 > a,
+a > h5,
+h6 > a,
+a > h6 {
+    color: inherit !important;
 }
 
 
