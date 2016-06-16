@@ -104,7 +104,8 @@ body.platform-android * {
 }
 
 #circle {
-    border: 2px solid #69707a !important;
+    /*border: 2px solid #69707a !important;*/
+    border: 2px solid #00A8C6 !important;
     border-radius: 50% !important;
     padding-top: 2.5rem !important;
     padding-bottom: 2.5rem !important;
@@ -146,6 +147,10 @@ body.platform-android * {
 
 .hide-me {
     display: none !important;
+}
+
+.visibility-me {
+    visibility: hidden !important;
 }
 
 i.ion-icon {
@@ -221,6 +226,10 @@ a > i.ion-icon {
 .t-h1-icon {
     font-size: 800% !important;
     line-height: 0px !important;
+}
+
+.t-h1-icon > i.ion-icon {
+    /*color: #00A8C6 !important;*/
 }
 
 .t-h3-icon {
@@ -381,6 +390,11 @@ a > i.ion-icon {
     margin-top: 1rem !important;
 }
 
+.marg-hr {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
 .marg0-t05 {
     margin: 0.5rem 0px 0px 0px !important;
 }
@@ -404,23 +418,52 @@ h6 {
     color: #69707a !important;
 }
 
+
 /*p > a,*/
+
 a > li,
 li > a,
 a > p,
+
 /*h1 > a,*/
+
 a > h1,
+
 /*h2 > a,*/
+
 a > h2,
+
 /*h3 > a,*/
+
 a > h3,
+
 /*h4 > a,*/
+
 a > h4,
+
 /*h5 > a,*/
+
 a > h5,
+
 /*h6 > a,*/
+
 a > h6 {
     color: inherit !important;
+}
+
+
+/*
+	THEME
+*/
+
+h1 {
+    /*color: #00A8C6 !important;*/
+}
+
+hr {
+    /*border-color: #00A8C6 !important;*/
+    border-color: #69707a !important;
+    border-style: solid;
 }
 
 
