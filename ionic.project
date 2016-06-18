@@ -6,6 +6,7 @@
 	"watchPatterns": [
 		"./js/pres.js",
 		"./css/pres.css",
-		"./index.html"
+		"./index.html",
+		"./awesome.html"
 	]
 }

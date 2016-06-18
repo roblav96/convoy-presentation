@@ -451,6 +451,29 @@ a > h6 {
     color: inherit !important;
 }
 
+.big-data-table {
+    font-size: 75% !important;
+}
+
+.big-data-table > thead > tr > th,
+.big-data-table > tbody > tr > td {
+    border-color: #69707a !important;
+    border-width: 4px;
+}
+
+.big-data-source {
+    font-size: 80% !important;
+    width: 40%;
+}
+
+.big-data-calc {
+    font-size: 80% !important;
+}
+
+.img-chart3 {
+	width: 50%;
+}
+
 
 /*
 	THEME
@@ -464,6 +487,20 @@ hr {
     /*border-color: #00A8C6 !important;*/
     border-color: #69707a !important;
     border-style: solid;
+}
+
+img.img-block {
+    width: 100%;
+    max-width: inherit !important;
+}
+
+.reveal section img {
+    border-color: #69707a;
+}
+
+.reveal table th,
+.reveal table td {
+    color: #69707a;
 }
 
 
