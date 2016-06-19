@@ -69,16 +69,6 @@ body.platform-android * {
     z-index: 99 !important;
 }
 
-.pres-title {
-    text-transform: inherit !important;
-    font-weight: 700 !important;
-}
-
-.pres-pitch {
-    text-transform: inherit !important;
-    font-style: italic !important;
-}
-
 .user-convoy {
     border: 1px solid #69707a !important;
     padding-bottom: 1rem !important;
@@ -162,11 +152,20 @@ a > i.ion-icon {
 }
 
 .ul-tiny > li {
-    font-size: 50% !important
+    font-size: 50% !important;
 }
 
 .ul-small > li {
-    font-size: 66% !important
+    font-size: 66% !important;
+}
+
+.table-small p {
+    margin: 0px;
+}
+
+.table-small th,
+.table-small td {
+    font-size: 66%;
 }
 
 .img0 {
@@ -471,7 +470,13 @@ a > h6 {
 }
 
 .img-chart3 {
-	width: 50%;
+    width: 50%;
+}
+
+.table-expenses td:nth-child(2) {
+    /* for the notes column */
+    width: 33% !important;
+    font-size: 50%;
 }
 
 
@@ -501,6 +506,46 @@ img.img-block {
 .reveal table th,
 .reveal table td {
     color: #69707a;
+}
+
+.reveal a {
+    color: #00A8C6;
+}
+
+.reveal a:hover {
+    color: #40C0CB;
+}
+
+.reveal .controls .navigate-right,
+.reveal .controls .navigate-right.enabled {
+    color: #00A8C6;
+    border-left-color: #00A8C6;
+}
+
+.reveal .controls .navigate-right.enabled:hover {
+    color: #40C0CB;
+    border-left-color: #40C0CB;
+}
+
+.reveal .controls .navigate-left,
+.reveal .controls .navigate-left.enabled {
+    color: #00A8C6;
+    border-right-color: #00A8C6;
+}
+
+.reveal .controls .navigate-left.enabled:hover {
+    color: #40C0CB;
+    border-right-color: #40C0CB;
+}
+
+.reveal .controls .navigate-up,
+.reveal .controls .navigate-up.enabled {
+    display: none;
+}
+
+.reveal .controls .navigate-down,
+.reveal .controls .navigate-down.enabled {
+    display: none;
 }
 
 

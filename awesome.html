@@ -43,17 +43,18 @@
 
 </head>
 
-<body>
+<body onscroll="onscroll()">
     <img id="fixed_icon" class="animated fadeInLeft" src="./img/new-icon.png" alt="My Convoy Icon">
 
     <div class="reveal">
         <div class="slides">
 
             <section id="intro" class="animated opacity0">
-                <img class="stretch img0" src="./img/new-icon.png" alt="My Convoy">
-                <h2 class="pres-title">My Convoy</h2>
-                <h5 id="pitch" class="pres-pitch animated opacity0">Redefine the way you stay connected.</h5>
-                <div class="row">
+                <p class="marg0">The only reliable location sharing app</p>
+                <img class="stretch img0 marg0" src="./img/new-icon.png" alt="My Convoy">
+                <h3 class="t-inherit t-bolder marg0">My Convoy</h3>
+                <p id="pitch" class="t-italic animated opacity0 marg0 marg05-b">Redefine the way you stay connected.</p>
+                <div class="row marg0 marg05-b">
                     <div class="col-xs">
                         <a href="http://getmyconvoy.com" target="_blank">
                             <img class="img-store img-store-apple img0" src="/img/apple.png" alt="My Convoy - iOS">
@@ -65,7 +66,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="row pad2-t">
+                <div class="row">
                     <div class="col-xs">
                         <p class="marg0">
                             Robert Laverty
@@ -100,7 +101,7 @@
                 <p class="marg0">
                     <a href="https://www.google.com/trends/explore#q=location%20sharing%2C%20share%20my%20location&cmpt=q&tz=Etc%2FGMT%2B4"
                         target="_blank">
-                        Google Trends
+                        Google Trends, June 2016
                     </a>
                 </p>
             </section>
@@ -113,7 +114,7 @@
             <section>
                 <h2>Big Data</h2>
                 <div class="row">
-                    <div class="col-xs t-left">
+                    <div class="col-xs t-left fragment">
                         <h4 class="marg0 t-center t-bold">How?</h4>
                         <ul class="ul-small">
                             <li>Sell anonymous location data to companies for research and analysis.</li>
@@ -128,7 +129,7 @@
                             <li>xAd</li>
                         </ul>
                     </div>
-                    <div class="col-xs t-left">
+                    <div class="col-xs t-left fragment">
                         <h4 class="marg0 t-center t-bold">What?</h4>
                         <ul class="ul-small">
                             <li>Longitude &amp; Latitude</li>
@@ -142,7 +143,7 @@
                             <li>Facebook Demographics</li>
                         </ul>
                     </div>
-                    <div class="col-xs t-left">
+                    <div class="col-xs t-left fragment">
                         <h4 class="marg0 t-center t-bold">Why?</h4>
                         <ul class="ul-small">
                             <li>
@@ -151,7 +152,17 @@
                                 </p>
                                 <p class="marg0">
                                     <a href="http://arxiv.org/abs/1407.0566v2" target="_blank">
-                                        - Money Walks: Case Study by Jacopo Staiano, Cornell University (.PDF)
+                                        - Money Walks: Case Study by Jacopo Staiano, Cornell University (.PDF) - July 2014
+                                    </a>
+                                </p>
+                            </li>
+                            <li class="marg-top1">
+                                <p class="marg0 t-italic">
+                                    "Economic value of big geospatial data could reach $700 billion/yr by 2020"
+                                </p>
+                                <p class="marg0">
+                                    <a href="http://geospatial.blogs.com/geospatial/2013/05/economic-value-of-big-spatial-data.html" target="_blank">
+                                        - McKinsey Publications: by Geoff Zeiss - May 2013
                                     </a>
                                 </p>
                             </li>
@@ -161,7 +172,7 @@
             </section>
 
             <section>
-                <h3>Value of Big Data</h3>
+                <h2>Value of Big Data</h2>
                 <table class="big-data-table">
                     <thead>
                         <tr>
@@ -170,18 +181,18 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr class="fragment">
                             <td class="big-data-source">
                                 <span class="t-italic">
                                     100,000,000 Location Updates are worth $57,598.2 per year
                                 </span>
                                 <br>
                                 <a href="https://www.econstor.eu/bitstream/10419/101439/1/79523421X.pdf" target="_blank">
-                                    - The Economic Value of Location Data: ECONSTORE (.PDF)
+                                    - The Economic Value of Location Data: ECONSTORE (.PDF) - June 2014
                                 </a>
                             </td>
                             <td class="big-data-calc">
-                                1 User = 73.62 Location Updates per Day
+                                Average User = 73.62 Location Updates per Day
                                 <br>= 26,871.3 Location Updates per Year
                                 <hr> 100,000,000 Location Updates = 3,721.44 Users
                                 <br>= $57,598.2 per Year
@@ -191,7 +202,7 @@
                                 <!-- <br>* Meta data includes sex, age, at an update rate of 5 minutes -->
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="fragment">
                             <td class="big-data-source">
                                 <span class="t-italic">
                                     Out of 60 participants, the team ran 596 auctions over 60 days and paid out a total of $295.43 in the
@@ -199,7 +210,7 @@
                                 </span>
                                 <br>
                                 <a href="http://arxiv.org/abs/1407.0566v2" target="_blank">
-                                    - Money Walks: Case Study by Jacopo Staiano, Cornell University (.PDF)
+                                    - Money Walks: Case Study by Jacopo Staiano, Cornell University (.PDF) - July 2014
                                 </a>
                             </td>
                             <td class="big-data-calc">
@@ -215,7 +226,7 @@
             </section>
 
             <section>
-                <h3>Revenue from Big Data</h3>
+                <h2>Revenue from Big Data</h2>
 
                 <div class="row">
                     <div class="col-xs-7">
@@ -264,7 +275,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div id="demo_frag" class="col-xs t-left">
+                    <div id="demo_frag" class="col-xs t-left fragment">
                         <video id="demo" class="video" controls src="./img/demo-720.mp4"></video>
                         <center>
                             <i id="demo_play" class="fragment current-visible t-h4-icon ion-icon icon-play"></i>
@@ -275,16 +286,17 @@
             </section>
 
             <section>
-                <h2>Enterprise Licenses</h2>
+                <h3>Enterprise Licenses</h3>
                 <div class="row">
-                    <div class="col-xs t-left fragment">
+                    <div class="col-xs t-left">
                         <h4 class="marg0 t-center">How?</h4>
                         <ul class="ul-small">
                             <li>Sell enterprise licenses to corporations which unlock certain plug-ins</li>
+                            <li class="marg-top1">Sell branded platform to individual companies</li>
                         </ul>
                     </div>
                     <div class="col-xs t-left fragment">
-                        <h4 class="marg0 t-center">Plug-ins</h4>
+                        <h4 class="marg0 t-center">What?</h4>
                         <ul class="ul-small">
                             <li>Track employees</li>
                             <li>Automate labor hours</li>
@@ -295,64 +307,330 @@
             </section>
 
             <section>
-                <h2>Next Steps</h2>
+                <h3>Administered Accounts</h3>
                 <div class="row">
-                    <div class="col-xs-3 t-left">
+                    <div class="col-xs-5 t-left">
+                        <h4 class="marg0 t-center t-bold">What?</h4>
+                        <ul class="ul-small">
+                            <li>
+                                Parents can purchase administered accounts for their children which restrict disabling the service
+                            </li>
+                        </ul>
+                        <h4 class="marg0 t-center t-bold">Why?</h4>
+                        <ul class="ul-small">
+                            <li>
+                                <p class="marg0 t-italic">
+                                    "There's always a market for parents buying stuff for their children."
+                                </p>
+                                <p class="marg0">
+                                    <a href="https://www.linkedin.com/in/bryanhealey" target="_blank">
+                                        - Bryan Healey, Software Manager at Amazon
+                                    </a>
+                                </p>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-xs t-left">
-                        <h4 class="marg0 t-bold">Expenses</h4>
-                    </div>
-                </div>
-                <div class="row fragment t-normal">
-                    <div class="col-xs-3 t-left">
-                        <p class="t-bold marg0">$50,000</p>
-                    </div>
-                    <div class="col-xs t-left">
-                        <p class="marg0">Marketing/User Acquisition Campaign; e.g. Facebook, Emails, Fees, Adwords, etc.</p>
-                    </div>
-                </div>
-                <div class="row fragment t-normal">
-                    <div class="col-xs-3 t-left">
-                        <p class="t-bold marg0">$10,000</p>
-                    </div>
-                    <div class="col-xs t-left">
-                        <p class="marg0">Miscellaneous expenses</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-3 t-left">
-                    </div>
-                    <div class="col-xs t-left">
-                        <h4 class="marg0 t-bold">Tools and Materials</h4>
-                    </div>
-                </div>
-                <div class="row fragment t-normal">
-                    <div class="col-xs-3 t-left">
-                        <p class="t-bold marg0">$5,000</p>
-                    </div>
-                    <div class="col-xs t-left">
-                        <p class="marg0">
-                            Per every additional 100,000 users for colocation server hosting
-                        </p>
-                    </div>
-                </div>
-                <div class="row fragment t-normal">
-                    <div class="col-xs-3 t-left">
-                        <p class="t-bold marg0">$49/month</p>
-                    </div>
-                    <div class="col-xs t-left">
-                        <p class="marg0">Per 100,000 map views from Mapbox</p>
-                    </div>
-                </div>
-                <div class="row fragment t-normal">
-                    <div class="col-xs-3 t-left">
-                        <p class="t-bold marg0">$75/month/server</p>
-                    </div>
-                    <div class="col-xs t-left">
-                        <p class="marg0">10Mbps bandwidth, (10Mb = 169,491 location updates/second)</p>
+                    <div class="col-xs-7 t-left fragment">
+                        <h4 class="marg0 t-center t-bold">How?</h4>
+                        <ul class="ul-small">
+                            <li>Charge $1.00 ($0.70 after taxes &amp; store fees) per month per administered
+                                account
+                            </li>
+                        </ul>
+                        <img class="" data-src="./img/chart4.png" alt="Chart 4">
                     </div>
                 </div>
             </section>
+
+            <section>
+                <h3>Expenses</h3>
+                <table class="table-expenses table-small">
+                    <thead>
+                        <tr>
+                            <th class="t-bold">Expense</th>
+                            <th class="t-bold">Notes</th>
+                            <th class="t-bold">Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Server Hardware
+                            </td>
+                            <td>
+                                Onetime Cost Per 100,000 users
+                            </td>
+                            <td>
+                                $5,000
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                10Mbps Server Bandwidth
+                            </td>
+                            <td>
+                                10Mb = 169,491 locations/second
+                            </td>
+                            <td>
+                                $80/Month/Server
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Testing Devices
+                            </td>
+                            <td>
+                                iPads, iPhones, Androids, etc.
+                            </td>
+                            <td>
+                                $2,500
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Become a Corporation
+                            </td>
+                            <td>
+                                Legal
+                            </td>
+                            <td>
+                                $6,000
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Process SAFE/Convertible Note
+                            </td>
+                            <td>
+                                Legal
+                            </td>
+                            <td>
+                                $600/Note
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Salary for Rob
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                $20,000/Year
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Salary for John
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                $5,000/Year
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Transportation
+                            </td>
+                            <td>
+                                To/From New Jersey
+                            </td>
+                            <td>
+                                $2,000/Year
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Ad Video Promo
+                            </td>
+                            <td>
+                                <a href="http://www.apptamin.com/app-videos/" target="_blank">
+                                    Apptamin
+                                </a>
+                                or
+                                <a href="http://www.gisteo.com/" target="_blank">
+                                    Gisteo
+                                </a>
+                            </td>
+                            <td>
+                                $2,500
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                App Review Websites
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                $75/Site
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                App Award Websites
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                $100/Site
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h3>Expenses</h3>
+                <table class="table-expenses table-small">
+                    <thead>
+                        <tr>
+                            <th class="t-bold">Expense</th>
+                            <th class="t-bold">Notes</th>
+                            <th class="t-bold">Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Public Relation Fees
+                            </td>
+                            <td>
+                                Popular figures, blogs, journals, etc.
+                            </td>
+                            <td>
+                                $1,000/Fee
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Facebook Ad Campaigns
+                            </td>
+                            <td>
+                                Avg $0.27 cost/click
+                            </td>
+                            <td>
+                                $2,000/Month
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                App Store Optimization
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                $2,000
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Search Engine Optimization
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                $2,000
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Press Release Package
+                            </td>
+                            <td>
+                                Media, writing, etc.
+                            </td>
+                            <td>
+                                $1,000
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Event Sponsorships
+                            </td>
+                            <td>
+                                Orientations, festivals, marathons, etc.
+                            </td>
+                            <td>
+                                $500/Event
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                News Letter Ads
+                            </td>
+                            <td>
+                                Local news, county news, etc.
+                            </td>
+                            <td>
+                                $250/Article
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Social Engagement Automation
+                            </td>
+                            <td>
+                                Buffer
+                            </td>
+                            <td>
+                                $50/Month
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Hire Grunt Work Interns
+                            </td>
+                            <td>
+                                Respond to reviews, reply to customers, engage social media, etc.
+                            </td>
+                            <td>
+                                (2) $1,000/Month
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="t-bolder">
+                                1 YEAR TOTAL EXPENSES
+                            </td>
+                            <td>
+                                <a href="https://myconvoyapp.com/slide-deck/img/chart5.png" target="_blank">
+                                    View Excel Spreadsheet
+                                </a>
+                            </td>
+                            <td class="t-bolder">
+                                $149,635.00
+                            </td>
+                        </tr>
+                        <!--                         <tr>
+                            <td>
+                                ________________
+                            </td>
+                            <td>
+                                ________________
+                            </td>
+                            <td>
+                                ________________
+                            </td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </section>
+
+
+
+
+
+            <!--  -->
+
+
+
+
 
             <section>
                 <h1>Problem</h1>
@@ -719,8 +997,25 @@
                 <h2>Target Markets</h2>
                 <div class="row pres-row">
                     <div class="col-xs">
+                        <h3 class="marg0 t-h5-icon"><i class="ion-icon icon-briefcase"></i></h3>
+                        <h4 class="marg0 t-normal">Businesses</h4>
+                        <ul class="ul-tiny fragment">
+                            <li>
+                                Automate labor hours by setting geographic zones on the map
+                            </li>
+                            <li>
+                                Track your employees location and driving speed while they're out in the field. Get notified if speed
+                                reaches a set threshold
+                            </li>
+                            <li>
+                                Register your employees as an "administered account" to have more control over their activities
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs">
                         <h3 class="marg0 t-h3-icon"><i class="ion-icon icon-people"></i></h3>
-                        <h4 class="marg0">Families</h4>
+                        <h4 class="marg0 t-bolder">Families</h4>
+                        <p class="marg0 t-small">(Primary Market)</p>
                         <ul class="ul-tiny fragment">
                             <li>
                                 See where your family members are at any point in time. Great for elders and children
@@ -737,24 +1032,8 @@
                         </ul>
                     </div>
                     <div class="col-xs">
-                        <h3 class="marg0 t-h3-icon"><i class="ion-icon icon-briefcase"></i></h3>
-                        <h4 class="marg0">Businesses</h4>
-                        <ul class="ul-tiny fragment">
-                            <li>
-                                Automate labor hours by setting geographic zones on the map
-                            </li>
-                            <li>
-                                Track your employees location and driving speed while they're out in the field. Get notified if speed
-                                reaches a set threshold
-                            </li>
-                            <li>
-                                Register your employees as an "administered account" to have more control over their activities
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-xs">
-                        <h3 class="marg0 t-h3-icon"><i class="ion-icon icon-beer"></i></h3>
-                        <h4 class="marg0">Young Adults</h4>
+                        <h3 class="marg0 t-h5-icon"><i class="ion-icon icon-beer"></i></h3>
+                        <h4 class="marg0 t-normal">Young Adults</h4>
                         <ul class="ul-tiny fragment">
                             <li>
                                 Use the map to see which bar your friends are at in-case you get split-up

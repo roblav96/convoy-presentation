@@ -1,7 +1,6 @@
 //
 
-window.IS_VIEWING = true
-window.CLICKS = 0
+
 
 var sheets = []
 if ( navigator.userAgent.indexOf( 'Mac' ) != -1 || navigator.userAgent.indexOf( 'iPhone' ) != -1 || navigator.userAgent.indexOf( 'iPad' ) != -1 ) {
@@ -26,12 +25,6 @@ window.CAN_SLIDE = function ( TO_SLIDE ) {
 	} else {
 		document.getElementById( 'fixed_icon' ).classList.remove( 'hide-me' )
 	}
-
-	// if ( window.IS_VIEWING == true ) {
-	// 	if ( TO_SLIDE >= 20 ) {
-	// 		Reveal.slide( 20 )
-	// 	}
-	// }
 }
 
 Reveal.addEventListener( 'ready', function () {
@@ -77,6 +70,7 @@ Reveal.addEventListener( 'ready', function () {
 			'x-bytes': Math.random()
 		}
 	} ).then( function ( response ) {} ).catch( function ( response ) {} )
+
 } )
 
 Reveal.addEventListener( 'slidechanged', function ( event ) {
@@ -114,21 +108,7 @@ document.getElementById( 'fixed_icon' ).addEventListener( 'click', function ( ev
 	if ( location.pathname == '/client' ) {
 		return
 	}
-
 	Reveal.slide( 0 )
-
-	// if ( window.CLICKS == 5 ) {
-	// 	return	
-	// }
-
-	// window.CLICKS = window.CLICKS + 1
-	// if ( window.CLICKS == 5 ) {
-	// 	window.IS_VIEWING = false
-	// 	document.getElementById( 'contact_us' ).remove()
-	// 	if ( Reveal.getState().indexh == 20 ) {
-	// 		Reveal.slide( 20 )
-	// 	}
-	// }
 } )
 
 
@@ -136,6 +116,29 @@ document.getElementById( 'fixed_icon' ).addEventListener( 'click', function ( ev
 
 
 
+// document.body.addEventListener( "scroll", function ( evt ) {
+// 	console.log( 'evt >', evt )
+// }, false )
+
+// var body = document.body
+// if ( body.addEventListener ) {
+// 	body.addEventListener( "mousewheel", MouseWheelHandler, false )
+// 	body.addEventListener( "DOMMouseScroll", MouseWheelHandler, false )
+// } else {
+// 	body.attachEvent( "onmousewheel", MouseWheelHandler )
+// }
+
+// function MouseWheelHandler( evt ) {
+// 	var evt = window.event || evt
+// 	console.log( 'evt >', evt )
+
+// 	var deltaX = Math.max( -1, Math.min( 1, ( evt.wheelDeltaX || -evt.detail ) ) )
+// 	console.log( 'deltaX >', deltaX )
+// 	var deltaY = Math.max( -1, Math.min( 1, ( evt.wheelDeltaY || -evt.detail ) ) )
+// 	console.log( 'deltaY >', deltaY )
+
+// 	return false
+// }
 
 
 
