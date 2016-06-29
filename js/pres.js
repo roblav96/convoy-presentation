@@ -19,15 +19,29 @@ for ( i = 0; i < len; i++ ) {
 	document.head.appendChild( el )
 }
 
+
+
+
+
 window.CAN_SLIDE = function ( TO_SLIDE ) {
 	if ( TO_SLIDE == 0 ) {
 		document.getElementById( 'fixed_icon' ).classList.add( 'hide-me' )
+		document.getElementById( 'fixed_overview' ).classList.add( 'hide-me' )
+		document.getElementById( 'fixed_revenue' ).classList.add( 'hide-me' )
 	} else {
 		document.getElementById( 'fixed_icon' ).classList.remove( 'hide-me' )
+		document.getElementById( 'fixed_overview' ).classList.remove( 'hide-me' )
+		document.getElementById( 'fixed_revenue' ).classList.remove( 'hide-me' )
 	}
 }
 
 Reveal.addEventListener( 'ready', function () {
+
+	if ( location.pathname == '/client' ) {
+		document.getElementById( 'fixed_overview' ).classList.add( 'hide-me' )
+		document.getElementById( 'fixed_revenue' ).classList.add( 'hide-me' )
+	}
+
 	window.CAN_SLIDE( Reveal.getState().indexh )
 
 	if ( Reveal.getState().indexh != 0 ) {
@@ -41,17 +55,17 @@ Reveal.addEventListener( 'ready', function () {
 	setTimeout( function () {
 		document.getElementById( 'intro' ).classList.remove( 'opacity0' )
 		document.getElementById( 'intro' ).classList.add( 'zoomIn' )
-	}, 500 )
+	}, 250 )
 	setTimeout( function () {
 		document.getElementById( 'intro' ).classList.remove( 'animated' )
 		document.getElementById( 'intro' ).classList.remove( 'zoomIn' )
 		document.getElementById( 'pitch' ).classList.remove( 'opacity0' )
 		document.getElementById( 'pitch' ).classList.add( 'bounceIn' )
-	}, 1500 )
+	}, 1250 )
 	setTimeout( function () {
 		document.getElementById( 'pitch' ).classList.remove( 'animated' )
 		document.getElementById( 'pitch' ).classList.remove( 'bounceIn' )
-	}, 2500 )
+	}, 2250 )
 
 	axios( {
 		method: 'post',
@@ -108,7 +122,34 @@ document.getElementById( 'fixed_icon' ).addEventListener( 'click', function ( ev
 	if ( location.pathname == '/client' ) {
 		return
 	}
+	if ( Reveal.isOverview() == true ) {
+		Reveal.toggleOverview()
+	}
 	Reveal.slide( 0 )
+} )
+
+document.getElementById( 'fixed_revenue' ).addEventListener( 'click', function ( evt ) {
+	if ( location.pathname == '/client' ) {
+		return
+	}
+	if ( location.pathname.indexOf( 'awesome' ) != -1 || location.pathname.indexOf( 'investors' ) != -1 ) {
+		return
+	}
+
+	if ( Reveal.isOverview() == false ) {
+		Reveal.toggleOverview()
+	}
+} )
+
+document.getElementById( 'fixed_overview' ).addEventListener( 'click', function ( evt ) {
+	if ( location.pathname == '/client' ) {
+		return
+	}
+	Reveal.toggleOverview()
+} )
+
+document.getElementById( 'fixed_fullscreen' ).addEventListener( 'click', function ( evt ) {
+	alert( '\nPress "F"\n\n' )
 } )
 
 
