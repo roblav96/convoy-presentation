@@ -66,7 +66,7 @@ Reveal.addEventListener( 'ready', function () {
 
 	axios( {
 		method: 'post',
-		url: 'https://myconvoyapp.com/api/addone',
+		url: 'https://myconvoyapp.com/json/addone',
 		data: {
 			route: location.pathname,
 			site: location.pathname,
