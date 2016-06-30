@@ -148,9 +148,9 @@ document.getElementById( 'fixed_overview' ).addEventListener( 'click', function 
 	Reveal.toggleOverview()
 } )
 
-document.getElementById( 'fixed_fullscreen' ).addEventListener( 'click', function ( evt ) {
-	alert( '\nPress "F"\n\n' )
-} )
+// document.getElementById( 'fixed_fullscreen' ).addEventListener( 'click', function ( evt ) {
+// 	alert( '\nPress "F"\n\n' )
+// } )
 
 
 

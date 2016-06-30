@@ -121,7 +121,8 @@ body.platform-android * {
 }
 
 .col-xs > img {
-    max-width: 90% !important;
+    /*max-width: 90% !important;*/
+    max-width: 100% !important;
 }
 
 .pres-row {
@@ -382,6 +383,10 @@ a > i.ion-icon {
 
 .marg1-b {
     margin: 0px 0px 1rem 0px !important;
+}
+
+.marg05-b {
+    margin: 0px 0px 0.5rem 0px !important;
 }
 
 .pad0 {
