@@ -69,32 +69,15 @@ body.platform-android * {
     z-index: 99 !important;
 }
 
-#fixed_revenue {
+#fixed_buttons {
     position: fixed;
     top: 1rem;
     right: 1rem;
     z-index: 99 !important;
 }
 
-#fixed_overview {
-    position: fixed;
-    bottom: 1rem;
-    left: 1rem;
-    z-index: 99 !important;
-}
-
-#fixed_fullscreen {
-    position: fixed;
-    top: 1rem;
-    left: 50%;
-    z-index: 99 !important;
-}
-
-.fixed-button {
-    cursor: pointer;
-}
-
 .fixed-button > a {
+    cursor: pointer;
     border-radius: 5px;
     padding: 5px;
     color: #00A8C6;

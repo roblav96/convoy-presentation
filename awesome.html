@@ -46,12 +46,9 @@
 <body>
     <img id="fixed_icon" class="animated fadeInLeft pointer" src="./img/new-icon.png" alt="My Convoy Icon">
 
-    <div id="fixed_revenue" class="fixed-button animated rotateInUpRight">
-        <a href="#/revenue"><i class="ion-icon icon-logo-usd"></i> Skip to Revenue</a>
-    </div>
-
-    <div id="fixed_overview" class="fixed-button animated rotateInDownLeft">
-        <a><i class="ion-icon icon-expand"></i> Overview Slides</a>
+    <div id="fixed_buttons" class="fixed-button animated rotateInUpRight">
+        <a id="fixed_revenue" href="#/revenue"><i class="ion-icon icon-logo-usd"></i> Skip to Revenue</a>
+        <a id="fixed_overview"><i class="ion-icon icon-expand"></i> Slide Selection</a>
     </div>
 
     <div class="reveal">
@@ -63,7 +60,7 @@
                 <h3 class="t-inherit t-bolder marg0">My Convoy</h3>
                 <p id="pitch" class="t-italic animated opacity0 marg0 marg05-b">Redefine the way you stay connected.</p>
                 <div class="marg0 store-row">
-                    <a onclick="alert('\nWEB APPLICATION COMING SOON\n\nCheck back in one month.')">
+                    <a class="pointer" onclick="alert('\nWEB APPLICATION COMING SOON\n\nCheck back in one month.')">
                         <img class="img0" data-src="./img/desktop-badge-2.png" alt="My Convoy - iOS">
                     </a>
                     <a href="http://getmyconvoy.com" target="_blank">

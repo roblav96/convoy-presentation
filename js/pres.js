@@ -26,20 +26,17 @@ for ( i = 0; i < len; i++ ) {
 window.CAN_SLIDE = function ( TO_SLIDE ) {
 	if ( TO_SLIDE == 0 ) {
 		document.getElementById( 'fixed_icon' ).classList.add( 'hide-me' )
-		document.getElementById( 'fixed_overview' ).classList.add( 'hide-me' )
-		document.getElementById( 'fixed_revenue' ).classList.add( 'hide-me' )
+		document.getElementById( 'fixed_buttons' ).classList.add( 'hide-me' )
 	} else {
 		document.getElementById( 'fixed_icon' ).classList.remove( 'hide-me' )
-		document.getElementById( 'fixed_overview' ).classList.remove( 'hide-me' )
-		document.getElementById( 'fixed_revenue' ).classList.remove( 'hide-me' )
+		document.getElementById( 'fixed_buttons' ).classList.remove( 'hide-me' )
 	}
 }
 
 Reveal.addEventListener( 'ready', function () {
 
 	if ( location.pathname == '/client' ) {
-		document.getElementById( 'fixed_overview' ).classList.add( 'hide-me' )
-		document.getElementById( 'fixed_revenue' ).classList.add( 'hide-me' )
+		document.getElementById( 'fixed_buttons' ).classList.add( 'hide-me' )
 	}
 
 	window.CAN_SLIDE( Reveal.getState().indexh )
