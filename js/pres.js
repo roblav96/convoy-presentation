@@ -72,9 +72,7 @@ Reveal.addEventListener( 'ready', function () {
 			site: location.pathname,
 			sessionID: Math.random().toString(),
 			referrer: document.referrer,
-			stamp: new Date().getTime(),
-			date: new Date(),
-			userAgent: navigator.userAgent
+			userAgent: navigator.userAgent,
 		},
 		headers: {
 			'x-uuid': Math.random(),
