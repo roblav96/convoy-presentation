@@ -47,7 +47,7 @@
     <img id="fixed_icon" class="animated fadeInLeft pointer" src="./img/new-icon.png" alt="My Convoy Icon">
 
     <div id="fixed_buttons" class="fixed-button animated rotateInUpRight">
-        <a id="fixed_revenue" href="#/revenue"><i class="ion-icon icon-logo-usd"></i> Skip to Revenue</a>
+        <a id="fixed_revenue"><i class="ion-icon icon-logo-usd"></i> Skip to Revenue</a>
         <a id="fixed_overview"><i class="ion-icon icon-expand"></i> Slide Selection</a>
     </div>
 
@@ -1247,7 +1247,7 @@
     <script>
     if (location.pathname.indexOf('awesome') != -1) {
         Reveal.initialize({
-            history: true,
+            history: false,
             multiplex: {
                 secret: '1462310921167139262',
                 id: '048cda8c5359d020',
@@ -1263,7 +1263,7 @@
         })
     } else if (location.pathname.indexOf('investors') != -1) {
         Reveal.initialize({
-            history: true
+            history: false
         })
     } else {
         Reveal.initialize({
