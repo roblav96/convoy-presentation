@@ -35,7 +35,7 @@ window.CAN_SLIDE = function ( TO_SLIDE ) {
 
 Reveal.addEventListener( 'ready', function () {
 
-	if ( location.pathname == '/client' ) {
+	if ( location.pathname.indexOf( 'client' ) != -1 ) {
 		document.getElementById( 'fixed_buttons' ).classList.add( 'hide-me' )
 	}
 
@@ -114,7 +114,7 @@ Reveal.addEventListener( "fragmenthidden", function ( frag ) {
 } )
 
 document.getElementById( 'fixed_icon' ).addEventListener( 'click', function ( evt ) {
-	if ( location.pathname == '/client' ) {
+	if ( location.pathname.indexOf( 'client' ) != -1 ) {
 		return
 	}
 	if ( Reveal.isOverview() == true ) {
@@ -124,7 +124,7 @@ document.getElementById( 'fixed_icon' ).addEventListener( 'click', function ( ev
 } )
 
 document.getElementById( 'fixed_revenue' ).addEventListener( 'click', function ( evt ) {
-	if ( location.pathname == '/client' ) {
+	if ( location.pathname.indexOf( 'client' ) != -1 ) {
 		return
 	}
 
@@ -141,7 +141,7 @@ document.getElementById( 'fixed_revenue' ).addEventListener( 'click', function (
 } )
 
 document.getElementById( 'fixed_overview' ).addEventListener( 'click', function ( evt ) {
-	if ( location.pathname == '/client' ) {
+	if ( location.pathname.indexOf( 'client' ) != -1 ) {
 		return
 	}
 	Reveal.toggleOverview()
