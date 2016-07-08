@@ -21,15 +21,13 @@ for ( i = 0; i < len; i++ ) {
 
 
 
-document.addEventListener( 'DOMContentLoaded', function ( evt ) {
-	if ( location.pathname.indexOf( 'client' ) != -1 ) {
-		document.getElementById( 'fixed_buttons' ).classList.add( 'hide-me' )
-	}
-} )
-
 
 
 window.CAN_SLIDE = function ( TO_SLIDE ) {
+	if ( location.pathname.indexOf( 'client' ) != -1 ) {
+		document.getElementById( 'fixed_buttons' ).classList.add( 'hide-me' )
+	}
+
 	if ( TO_SLIDE == 0 ) {
 		document.getElementById( 'fixed_icon' ).classList.add( 'hide-me' )
 		document.getElementById( 'fixed_buttons' ).classList.add( 'hide-me' )
@@ -40,6 +38,10 @@ window.CAN_SLIDE = function ( TO_SLIDE ) {
 }
 
 Reveal.addEventListener( 'ready', function () {
+
+	if ( location.pathname.indexOf( 'client' ) != -1 ) {
+		document.getElementById( 'fixed_buttons' ).classList.add( 'hide-me' )
+	}
 
 	window.CAN_SLIDE( Reveal.getState().indexh )
 
