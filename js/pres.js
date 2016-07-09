@@ -132,11 +132,9 @@ document.getElementById( 'fixed_revenue' ).addEventListener( 'click', function (
 		return
 	}
 
+	Reveal.slide( 19 )
 	if ( location.pathname.indexOf( 'awesome' ) != -1 || location.pathname.indexOf( 'investors' ) != -1 ) {
-		Reveal.slide( 20 )
 		return
-	} else {
-		Reveal.slide( 20 )
 	}
 
 	if ( Reveal.isOverview() == false ) {
