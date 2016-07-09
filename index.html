@@ -51,6 +51,13 @@
         <a id="fixed_overview"><i class="ion-icon icon-expand"></i> Slide Selection</a>
     </div>
 
+    <div id="nav_left" class="fixed-button-nav animated opacity0">
+        <a id="nav_left_a"><i class="ion-icon icon-arrow-dropleft-circle"></i></a>
+    </div>
+    <div id="nav_right" class="fixed-button-nav animated opacity0">
+        <a id="nav_right_a"><i class="ion-icon icon-arrow-dropright-circle"></i></a>
+    </div>
+
     <div class="reveal">
         <div class="slides">
 
@@ -1210,6 +1217,7 @@
     if (location.pathname.indexOf('awesome') != -1) {
         Reveal.initialize({
             history: true,
+            controls: false,
             multiplex: {
                 secret: '1462310921167139262',
                 id: '048cda8c5359d020',
@@ -1248,6 +1256,7 @@
     } else {
         Reveal.initialize({
             history: true,
+            controls: false,
         })
     }
 

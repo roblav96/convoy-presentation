@@ -76,6 +76,20 @@ body.platform-android * {
     z-index: 99 !important;
 }
 
+#nav_left {
+    position: fixed;
+    bottom: 5%;
+    left: 5%;
+    z-index: 99 !important;
+}
+
+#nav_right {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 99 !important;
+}
+
 .fixed-button > a {
     cursor: pointer;
     border-radius: 5px;
@@ -89,6 +103,16 @@ body.platform-android * {
     color: #40C0CB;
     border: 1px solid #40C0CB;
     background-color: white;
+}
+
+.fixed-button-nav > a {
+    font-size: 500%;
+    cursor: pointer;
+    color: #00A8C6;
+}
+
+.fixed-button-nav > a:hover {
+    color: #40C0CB;
 }
 
 .user-convoy {

@@ -17,39 +17,48 @@ for ( i = 0; i < len; i++ ) {
 	el.href = sheets[ i ]
 	el.rel = "stylesheet"
 	document.head.appendChild( el )
+	el = null
 }
 
 
 
 
 
-window.CAN_SLIDE = function ( TO_SLIDE ) {
+window.CAN_SLIDE = function ( slide ) {
+
+	if ( slide == 0 ) {
+		document.getElementById( 'fixed_icon' ).classList.add( 'hide-me' )
+		document.getElementById( 'fixed_buttons' ).classList.add( 'hide-me' )
+		document.getElementById( 'nav_left' ).classList.add( 'hide-me' )
+	} else {
+		document.getElementById( 'fixed_icon' ).classList.remove( 'hide-me' )
+		document.getElementById( 'fixed_buttons' ).classList.remove( 'hide-me' )
+		document.getElementById( 'nav_left' ).classList.remove( 'hide-me' )
+	}
+
 	if ( location.pathname.indexOf( 'client' ) != -1 ) {
 		document.getElementById( 'fixed_buttons' ).classList.add( 'hide-me' )
 	}
 
-	if ( TO_SLIDE == 0 ) {
-		document.getElementById( 'fixed_icon' ).classList.add( 'hide-me' )
-		document.getElementById( 'fixed_buttons' ).classList.add( 'hide-me' )
-	} else {
-		document.getElementById( 'fixed_icon' ).classList.remove( 'hide-me' )
-		document.getElementById( 'fixed_buttons' ).classList.remove( 'hide-me' )
-	}
 }
 
 Reveal.addEventListener( 'ready', function () {
 
+	window.CAN_SLIDE( Reveal.getState().indexh )
+
 	if ( location.pathname.indexOf( 'client' ) != -1 ) {
 		document.getElementById( 'fixed_buttons' ).classList.add( 'hide-me' )
 	}
-
-	window.CAN_SLIDE( Reveal.getState().indexh )
 
 	if ( Reveal.getState().indexh != 0 ) {
 		document.getElementById( 'intro' ).classList.remove( 'animated' )
 		document.getElementById( 'intro' ).classList.remove( 'opacity0' )
 		document.getElementById( 'pitch' ).classList.remove( 'animated' )
 		document.getElementById( 'pitch' ).classList.remove( 'opacity0' )
+		document.getElementById( 'nav_left' ).classList.remove( 'animated' )
+		document.getElementById( 'nav_left' ).classList.remove( 'opacity0' )
+		document.getElementById( 'nav_right' ).classList.remove( 'animated' )
+		document.getElementById( 'nav_right' ).classList.remove( 'opacity0' )
 		return
 	}
 
@@ -58,11 +67,23 @@ Reveal.addEventListener( 'ready', function () {
 		document.getElementById( 'intro' ).classList.add( 'zoomIn' )
 	}, 250 )
 	setTimeout( function () {
+		document.getElementById( 'nav_left' ).classList.remove( 'opacity0' )
+		document.getElementById( 'nav_left' ).classList.add( 'bounceIn' )
+		document.getElementById( 'nav_right' ).classList.remove( 'opacity0' )
+		document.getElementById( 'nav_right' ).classList.add( 'bounceIn' )
+	}, 750 )
+	setTimeout( function () {
 		document.getElementById( 'intro' ).classList.remove( 'animated' )
 		document.getElementById( 'intro' ).classList.remove( 'zoomIn' )
 		document.getElementById( 'pitch' ).classList.remove( 'opacity0' )
 		document.getElementById( 'pitch' ).classList.add( 'bounceIn' )
 	}, 1250 )
+	setTimeout( function () {
+		document.getElementById( 'nav_left' ).classList.remove( 'animated' )
+		document.getElementById( 'nav_left' ).classList.remove( 'bounceIn' )
+		document.getElementById( 'nav_right' ).classList.remove( 'animated' )
+		document.getElementById( 'nav_right' ).classList.remove( 'bounceIn' )
+	}, 1750 )
 	setTimeout( function () {
 		document.getElementById( 'pitch' ).classList.remove( 'animated' )
 		document.getElementById( 'pitch' ).classList.remove( 'bounceIn' )
@@ -91,7 +112,6 @@ Reveal.addEventListener( 'slidechanged', function ( event ) {
 } )
 
 Reveal.addEventListener( "fragmentshown", function ( frag ) {
-	// console.log( 'SHOW > frag >', frag.fragment.id )
 
 	if ( frag.fragment.id == 'demo_frag' ) {
 		document.getElementById( 'demo' ).pause()
@@ -104,7 +124,6 @@ Reveal.addEventListener( "fragmentshown", function ( frag ) {
 } )
 
 Reveal.addEventListener( "fragmenthidden", function ( frag ) {
-	// console.log( 'HIDE > frag >', frag.fragment.id )
 
 	if ( frag.fragment.id == 'demo_frag' ) {
 		document.getElementById( 'demo' ).pause()
@@ -115,6 +134,7 @@ Reveal.addEventListener( "fragmenthidden", function ( frag ) {
 	} else if ( frag.fragment.id == 'demo_pause' ) {
 		document.getElementById( 'demo' ).play()
 	}
+
 } )
 
 document.getElementById( 'fixed_icon' ).addEventListener( 'click', function ( evt ) {
@@ -141,38 +161,27 @@ document.getElementById( 'fixed_overview' ).addEventListener( 'click', function 
 	Reveal.toggleOverview()
 } )
 
-// document.getElementById( 'fixed_fullscreen' ).addEventListener( 'click', function ( evt ) {
-// 	alert( '\nPress "F"\n\n' )
-// } )
+document.getElementById( 'nav_left_a' ).addEventListener( 'click', function ( evt ) {
+	if ( location.pathname.indexOf( 'client' ) != -1 ) {
+		return
+	}
+	Reveal.prev()
+} )
+
+document.getElementById( 'nav_right_a' ).addEventListener( 'click', function ( evt ) {
+	if ( location.pathname.indexOf( 'client' ) != -1 ) {
+		return
+	}
+	Reveal.next()
+} )
 
 
 
 
 
 
-// document.body.addEventListener( "scroll", function ( evt ) {
-// 	console.log( 'evt >', evt )
-// }, false )
 
-// var body = document.body
-// if ( body.addEventListener ) {
-// 	body.addEventListener( "mousewheel", MouseWheelHandler, false )
-// 	body.addEventListener( "DOMMouseScroll", MouseWheelHandler, false )
-// } else {
-// 	body.attachEvent( "onmousewheel", MouseWheelHandler )
-// }
 
-// function MouseWheelHandler( evt ) {
-// 	var evt = window.event || evt
-// 	console.log( 'evt >', evt )
-
-// 	var deltaX = Math.max( -1, Math.min( 1, ( evt.wheelDeltaX || -evt.detail ) ) )
-// 	console.log( 'deltaX >', deltaX )
-// 	var deltaY = Math.max( -1, Math.min( 1, ( evt.wheelDeltaY || -evt.detail ) ) )
-// 	console.log( 'deltaY >', deltaY )
-
-// 	return false
-// }
 
 
 
