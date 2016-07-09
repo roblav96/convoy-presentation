@@ -131,15 +131,7 @@ document.getElementById( 'fixed_revenue' ).addEventListener( 'click', function (
 	if ( location.pathname.indexOf( 'client' ) != -1 ) {
 		return
 	}
-
 	Reveal.slide( 19 )
-	if ( location.pathname.indexOf( 'awesome' ) != -1 || location.pathname.indexOf( 'investors' ) != -1 ) {
-		return
-	}
-
-	if ( Reveal.isOverview() == false ) {
-		Reveal.toggleOverview()
-	}
 } )
 
 document.getElementById( 'fixed_overview' ).addEventListener( 'click', function ( evt ) {
